@@ -14,7 +14,7 @@ public class InteractionPrompt : MonoBehaviour
             playerInteracts();
         }
     }
-
+        
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
