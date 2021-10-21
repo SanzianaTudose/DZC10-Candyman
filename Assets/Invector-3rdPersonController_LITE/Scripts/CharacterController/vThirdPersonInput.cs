@@ -85,6 +85,8 @@ namespace Invector.vCharacterController
         {
             cc.input.x = Input.GetAxis(horizontalInput);
             cc.input.z = Input.GetAxis(verticallInput);
+            
+            
         }
 
         protected virtual void CameraInput()
@@ -144,6 +146,8 @@ namespace Invector.vCharacterController
             if (Input.GetKeyDown(jumpInput) && JumpConditions())
                 cc.Jump();
         }
+
+        
 
         #endregion       
     }
