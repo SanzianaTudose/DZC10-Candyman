@@ -26,7 +26,7 @@ public class CandymanController : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        if (other.gameObject.CompareTag("Player")) {
+        if (other.gameObject.CompareTag("Player") && !playerChoseCandy) {
             interactText.gameObject.SetActive(true);
 
             playerInRange = true;
