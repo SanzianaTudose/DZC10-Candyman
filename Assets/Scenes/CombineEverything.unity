@@ -2864,6 +2864,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7067648709331284288, guid: 68de5778c1fa2ec42bcf71b2b40569f4, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1224796464}
+    - target: {fileID: 7067648709331284288, guid: 68de5778c1fa2ec42bcf71b2b40569f4, type: 3}
       propertyPath: interactText
       value: 
       objectReference: {fileID: 2118235339}
@@ -2884,6 +2888,7 @@ GameObject:
   - component: {fileID: 1224796467}
   - component: {fileID: 1224796466}
   - component: {fileID: 1224796465}
+  - component: {fileID: 1224796468}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2933,6 +2938,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1224796468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224796464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3de7a590465ffc14b85d636dce0c8d50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  castleDoor: {fileID: 1796913614}
 --- !u!1001 &1394046438
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3026,19 +3044,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1796913620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1796913614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a7bb76801f5ad747943ca405c136eda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animate: 0
 --- !u!1 &2112631053
 GameObject:
   m_ObjectHideFlags: 0

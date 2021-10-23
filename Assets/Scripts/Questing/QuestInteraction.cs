@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInteraction : MonoBehaviour
+public class QuestInteraction : MonoBehaviour
 {
+    [SerializeField] private GameObject gameManager;
     [SerializeField] private GameObject interactText;
     private GeneralQuest quest;
     private bool playerInRange = false;
@@ -20,6 +21,11 @@ public class PlayerInteraction : MonoBehaviour
         if(playerInRange && Input.GetKeyDown(KeyCode.E) && !questAlreadyTaken)
         {
             questAlreadyTaken = true;
+
+            // Notify CastleManager to open castle door
+            if (gameManager.GetComponent<CastleManager>() != null)
+                gameManager.GetComponent<CastleManager>().openCastleDoor();
+
             interactText.gameObject.SetActive(false);
             quest.ActivateQuest();
         }
