@@ -128,6 +128,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3776366647590001381, guid: 4abb3db5c5bfeb249927043367c7bf37, type: 3}
   m_PrefabInstance: {fileID: 1409337785}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &177750148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177750147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a93845e985a8cb41a48ed0b655015e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &177750154 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3776366647590001379, guid: 4abb3db5c5bfeb249927043367c7bf37, type: 3}
@@ -425,7 +437,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 683902084}
         m_TargetAssemblyTypeName: CandymanController, Assembly-CSharp
         m_MethodName: OnCandyChosen
         m_Mode: 2
@@ -804,6 +816,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
+--- !u!114 &683902084 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7445737550580663520, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
+  m_PrefabInstance: {fileID: 683902083}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d72220b307aee4b85655fc2b1bce45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &727455867
 GameObject:
   m_ObjectHideFlags: 0
@@ -1299,7 +1322,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 683902084}
         m_TargetAssemblyTypeName: CandymanController, Assembly-CSharp
         m_MethodName: OnCandyChosen
         m_Mode: 2
@@ -2050,7 +2073,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 683902084}
         m_TargetAssemblyTypeName: CandymanController, Assembly-CSharp
         m_MethodName: OnCandyChosen
         m_Mode: 2
