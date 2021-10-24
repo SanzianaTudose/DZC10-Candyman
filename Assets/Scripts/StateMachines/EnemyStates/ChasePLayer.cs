@@ -7,8 +7,7 @@ using UnityEngine.AI;
 public class ChasePlayer : Grounded
 {
     public PanicMeterController pMeter;
-    private float addPanic = 0.005f;
-    private float lowerPanic = 0.005f;
+    private float addPanic = 0.0002f;
 
     public ChasePlayer(EnemySM stateMachine) : base("ChasePlayer", stateMachine) { }
 
@@ -34,10 +33,6 @@ public class ChasePlayer : Grounded
         }
             
 
-        else
-        {
-            DecreasePanic();
-        }
     }
 
     void MoveTowardsTarget() {
@@ -71,13 +66,5 @@ public class ChasePlayer : Grounded
     }
 
 
-    private void DecreasePanic()
-    {
-        if (pMeter != null && pMeter.panicMeter.value > 0)
-        {
-            pMeter.panicMeter.value -= lowerPanic;
-
-        }
-
-    }
+   
 }

@@ -7,7 +7,9 @@ using UnityEngine.AI;
 public class Attack : Grounded
 {
     private PlayerMovement player;
-    
+    public PanicMeterController pMeter;
+    private float addPanic = 0.0006f;
+    private int eCount = 0;
     public Attack(EnemySM stateMachine) : base("Attack", stateMachine) { }
 
     public override void Enter()
@@ -15,7 +17,7 @@ public class Attack : Grounded
         base.Enter();
         sm.rend.sharedMaterial = sm.materials[3]; // red material
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
-        
+        pMeter = GameObject.FindGameObjectWithTag("Meter").GetComponent<PanicMeterController>();
 
     }
 
@@ -24,7 +26,9 @@ public class Attack : Grounded
         base.UpdateLogic();
 
         sm.FaceTarget(sm.target);   // Make sure to face towards the target
+        IncreasePanic();
         MiniGame();
+  
 
         // TODO Attack //
         // ........... //
@@ -43,12 +47,35 @@ public class Attack : Grounded
     {
         player.speed = 0;
         
-        if(Input.GetKey(KeyCode.E))
+        if(Input.GetKeyDown(KeyCode.E))
         {
-            stateMachine.ChangeState(sm.idleState);
-            player.speed = 10;
+            eCount += 1;
+            if(eCount > 20)
+            {
+                stateMachine.ChangeState(sm.idleState);
+                player.speed = 10;
+                eCount = 0;
+            }
+            
         }
     }
     //stateMachine.ChangeState(sm.idleState);
+
+    private void IncreasePanic()
+    {
+
+        if (pMeter != null && pMeter.panicMeter.value <= 100)
+        {
+            pMeter.panicMeter.value += addPanic;
+
+        }
+        else
+        {
+            Debug.Log("panic meter is null");
+        }
+
+    }
+
+    
 
 }
