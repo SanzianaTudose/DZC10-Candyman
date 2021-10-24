@@ -8,6 +8,8 @@ public class GeneralQuest : MonoBehaviour
     [HideInInspector] public bool questIsActive;
     [HideInInspector] public int collectedItems;
 
+    [SerializeField] private GameObject gameManager;
+
     private void Start()
     {
         DeactivateQuest();
@@ -24,6 +26,12 @@ public class GeneralQuest : MonoBehaviour
         {
             item.gameObject.SetActive(true);
         }
+
+        CompassManager compassManager = gameManager.GetComponent<CompassManager>();
+        if (compassManager == null)
+            Debug.LogError("GeneralQuest: CompassManager component not found on GameManager object");
+
+        compassManager.OnQuestActivate(new List<Transform>(QuestItems));
     }
 
     public void DeactivateQuest()

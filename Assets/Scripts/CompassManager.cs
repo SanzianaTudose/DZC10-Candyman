@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CompassController : MonoBehaviour {
-    [SerializeField] private List<Transform> targetObjects;
+public class CompassManager : MonoBehaviour {
+    [SerializeField] private GameObject compassObject;
+    private List<Transform> targetObjects;
     [SerializeField] private GameObject objectIndicatorPrefab;
     private Transform player;
 
@@ -18,15 +19,20 @@ public class CompassController : MonoBehaviour {
         if (player == null)
             Debug.LogError("CompassController: Player instance not found.");
 
-        indicatorsContainer = transform.GetChild(0);
+        indicatorsContainer = compassObject.transform.GetChild(0);
         if (player == null)
             Debug.LogError("CompassController: Indicators child not found.");
 
-        InstantiateIndicators();
+        targetObjects = new List<Transform>();
     }
 
     void Update() {
         SetIndicatorsDirection();
+    }
+
+    public void OnQuestActivate(List<Transform> questObjects) {
+        targetObjects = questObjects;
+        InstantiateIndicators();
     }
 
     private void InstantiateIndicators() {
