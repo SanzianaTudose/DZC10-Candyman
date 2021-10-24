@@ -47,7 +47,12 @@ public class CompassManager : MonoBehaviour {
     }
 
     private void SetIndicatorsDirection() {
-        for (int i = 0; i < targetObjects.Count; i++) { 
+        for (int i = 0; i < targetObjects.Count; i++) {
+            if (!targetObjects[i].gameObject.activeSelf) {
+                indicators[i].gameObject.SetActive(false);
+                continue;
+            }
+
             Vector3 dir = player.position - targetObjects[i].position;
 
             Quaternion objectDir = Quaternion.LookRotation(dir);
