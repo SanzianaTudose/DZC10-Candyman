@@ -21,8 +21,6 @@ namespace Invector.vCharacterController
         [HideInInspector] public vThirdPersonCamera tpCamera;
         [HideInInspector] public Camera cameraMain;
 
-        
-
         #endregion
 
         protected virtual void Start()
@@ -85,7 +83,6 @@ namespace Invector.vCharacterController
 
         public virtual void MoveInput()
         {
-            
             cc.input.x = Input.GetAxis(horizontalInput);
             cc.input.z = Input.GetAxis(verticallInput);
             
