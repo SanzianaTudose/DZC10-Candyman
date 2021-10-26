@@ -2285,9 +2285,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - npcName: QuestNPC
-    sentence: 'Init '
+    sentence: Hello, would you like a quest?
   - npcName: QuestNPC
-    sentence: End
+    sentence: Congrats you finished the quest.
 --- !u!114 &1611789481 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7067648709331284288, guid: 68de5778c1fa2ec42bcf71b2b40569f4, type: 3}

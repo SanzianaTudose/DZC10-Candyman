@@ -23,4 +23,11 @@ public class DialogueTrigger : MonoBehaviour
     public void EndDialogue() {
         dialogueManager.EndDialogue();
     }
+    public void TriggerFinalDialogue(int index) {
+        if (index > dialogue.Length)
+            Debug.LogWarning("DialogueTrigger: index too big");
+
+        dialogueManager.FinalDialogue(dialogue[index]);
+    }
+
 }

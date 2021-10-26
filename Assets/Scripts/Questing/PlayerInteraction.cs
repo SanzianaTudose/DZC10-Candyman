@@ -29,7 +29,7 @@ public class PlayerInteraction : MonoBehaviour
                 interactText.gameObject.SetActive(false);
                 dialogueTrigger.TriggerDialogue(0);
             } else if (quest.questComplete) {
-                dialogueTrigger.TriggerDialogue(1);
+                dialogueTrigger.TriggerFinalDialogue(1);
             }
         }
     }

@@ -36,4 +36,11 @@ public class DialogueManager : MonoBehaviour
 
     }
 
+    public void FinalDialogue(Dialogue dialogue) {
+        nameText.text = dialogue.npcName;
+        dialogueText.text = dialogue.sentence;
+
+        compass.SetActive(false);
+        dialogueBox.SetActive(true);
+    }
 }
