@@ -20,7 +20,7 @@ public class CandymanController : MonoBehaviour
 
     private void Update() {
         if (!playerChoseCandy && playerInRange && Input.GetKeyDown(KeyCode.E)) {
-            dialogueTrigger.TriggerDialogue();
+            dialogueTrigger.TriggerDialogue(0);
             interactText.gameObject.SetActive(false);
         }
     }

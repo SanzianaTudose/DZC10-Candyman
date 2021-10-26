@@ -9,6 +9,7 @@ public class GeneralQuest : MonoBehaviour
     public Transform[] QuestItems;
     [HideInInspector] public bool questIsActive;
     [HideInInspector] public int collectedItems;
+    public bool questComplete;
 
     [SerializeField] private GameObject gameManager;
 
@@ -22,6 +23,7 @@ public class GeneralQuest : MonoBehaviour
         DeactivateQuest();
         collectedItems = 0;
         questIsActive = false;
+        questComplete = false;
 
         questText = questProgression.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
         if (questText == null)
@@ -69,6 +71,7 @@ public class GeneralQuest : MonoBehaviour
         } else {
             questText.text = "Quest complete! Go back to QuestNPC";
             compassManager.OnQuestActivate(new List<Transform> { transform });
+            questComplete = true; // this shouldn't be checked in the UpdateUI() method but whatever
         }
     }
 }
