@@ -15,6 +15,7 @@ public class GeneralQuest : MonoBehaviour
     // UI Variables
     [SerializeField] private GameObject questProgression;
     private TextMeshProUGUI questText;
+    CompassManager compassManager;
 
     private void Start()
     {
@@ -25,6 +26,10 @@ public class GeneralQuest : MonoBehaviour
         questText = questProgression.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
         if (questText == null)
             Debug.LogError("GeneralQuest: GeneralQuest component not found");
+
+        compassManager = gameManager.GetComponent<CompassManager>();
+        if (compassManager == null)
+            Debug.LogError("GeneralQuest: CompassManager component not found on GameManager object");
     }
 
     public void ActivateQuest()
@@ -39,10 +44,6 @@ public class GeneralQuest : MonoBehaviour
         }
 
         // Update compass
-        CompassManager compassManager = gameManager.GetComponent<CompassManager>();
-        if (compassManager == null)
-            Debug.LogError("GeneralQuest: CompassManager component not found on GameManager object");
-
         compassManager.OnQuestActivate(new List<Transform>(QuestItems));
 
         // Update UI
@@ -67,7 +68,7 @@ public class GeneralQuest : MonoBehaviour
 
         } else {
             questText.text = "Quest complete! Go back to QuestNPC";
-            // compass: add point to QuestNPC
+            compassManager.OnQuestActivate(new List<Transform> { transform });
         }
     }
 }
