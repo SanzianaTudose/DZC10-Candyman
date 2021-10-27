@@ -9,6 +9,8 @@ public class PlayerInteraction : MonoBehaviour
     private bool playerInRange = false;
     private bool questAlreadyTaken = false;
 
+    [SerializeField] private GameObject gameManager;
+
     private void Start()
     {
         quest = GetComponent<GeneralQuest>();
@@ -22,6 +24,10 @@ public class PlayerInteraction : MonoBehaviour
             questAlreadyTaken = true;
             interactText.gameObject.SetActive(false);
             quest.ActivateQuest();
+
+            // Notify CastleManager to open castle door
+            if (gameManager.GetComponent<CastleManager>() != null)
+                gameManager.GetComponent<CastleManager>().openCastleDoor();
         }
     }
     private void OnTriggerEnter(Collider other)
