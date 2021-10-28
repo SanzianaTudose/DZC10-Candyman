@@ -35,13 +35,7 @@ public class PlayerInteraction : MonoBehaviour
                 dialogueTrigger.TriggerFinalDialogue(1);
             }
             
-            questAlreadyTaken = true;
-            interactText.gameObject.SetActive(false);
-            quest.ActivateQuest();
-
-            // Notify CastleManager to open castle door
-            if (gameManager.GetComponent<CastleManager>() != null)
-                gameManager.GetComponent<CastleManager>().openCastleDoor();
+            
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -68,6 +62,10 @@ public class PlayerInteraction : MonoBehaviour
         questAlreadyTaken = true;
         quest.ActivateQuest();
         dialogueTrigger.EndDialogue();
+
+        // Notify CastleManager to open castle door
+        if (gameManager.GetComponent<CastleManager>() != null)
+            gameManager.GetComponent<CastleManager>().openCastleDoor();
     }
 
     public void OnQuestReject() {
