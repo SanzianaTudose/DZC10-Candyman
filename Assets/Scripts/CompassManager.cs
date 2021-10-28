@@ -24,21 +24,22 @@ public class CompassManager : MonoBehaviour {
             Debug.LogError("CompassController: Indicators child not found.");
 
         targetObjects = new List<Transform>();
+        indicators = new List<Transform>();
     }
 
-    void Update() {
+    void LateUpdate() {
         SetIndicatorsDirection();
     }
 
     public void OnQuestActivate(List<Transform> questObjects) {
-        targetObjects = questObjects;
-        InstantiateIndicators();
+        foreach (Transform questObject in questObjects)
+            targetObjects.Add(questObject);
+
+        InstantiateIndicators(questObjects);
     }
 
-    private void InstantiateIndicators() {
-        indicators = new List<Transform>();
-
-        foreach (Transform target in targetObjects) {
+    private void InstantiateIndicators(List<Transform> questObjects) {
+        foreach (Transform target in questObjects) {
             GameObject newIndicator = Instantiate(objectIndicatorPrefab, objectIndicatorPrefab.transform.position, objectIndicatorPrefab.transform.rotation);
             newIndicator.transform.SetParent(indicatorsContainer, false);
 

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    public Dialogue dialogue;
-    private DialogueManager dialogueManager;
+    public Dialogue[] dialogue;
+    protected DialogueManager dialogueManager;
 
     private void Start() {
         dialogueManager = FindObjectOfType<DialogueManager>();
@@ -13,11 +13,22 @@ public class DialogueTrigger : MonoBehaviour
             Debug.LogWarning("DialogueTrigger: DialogueManager object was not found.");
     }
 
-    public void TriggerDialogue() {
-        dialogueManager.StartDialogue(dialogue);
+    public virtual void TriggerDialogue(int index) {
+        if (index >= dialogue.Length) {
+            Debug.LogWarning("DialogueTrigger: index too big");
+            return;
+        }
+
+       dialogueManager.StartDialogue(dialogue[index]);
     }
 
     public void EndDialogue() {
         dialogueManager.EndDialogue();
+    }
+    public void TriggerFinalDialogue(int index) {
+        if (index >= dialogue.Length)
+            Debug.LogWarning("DialogueTrigger: index too big");
+
+        dialogueManager.FinalDialogue(dialogue[index]);
     }
 }
