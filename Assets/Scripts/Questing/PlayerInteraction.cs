@@ -11,6 +11,7 @@ public class PlayerInteraction : MonoBehaviour
     private bool questAlreadyTaken = false;
 
     private DialogueTrigger dialogueTrigger;
+    [SerializeField] private GameObject gameManager;
 
     private void Start()
     {
@@ -33,6 +34,14 @@ public class PlayerInteraction : MonoBehaviour
                 interactText.gameObject.SetActive(false);
                 dialogueTrigger.TriggerFinalDialogue(1);
             }
+            
+            questAlreadyTaken = true;
+            interactText.gameObject.SetActive(false);
+            quest.ActivateQuest();
+
+            // Notify CastleManager to open castle door
+            if (gameManager.GetComponent<CastleManager>() != null)
+                gameManager.GetComponent<CastleManager>().openCastleDoor();
         }
     }
     private void OnTriggerEnter(Collider other)
