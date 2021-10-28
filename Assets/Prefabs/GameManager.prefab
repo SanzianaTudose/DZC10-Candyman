@@ -47,6 +47,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 0}
+  candyChoices: {fileID: 0}
+  questChoices: {fileID: 0}
+  finalChoices: {fileID: 0}
+  compass: {fileID: 0}
   nameText: {fileID: 0}
   dialogueText: {fileID: 0}
 --- !u!114 &1661793452299034255

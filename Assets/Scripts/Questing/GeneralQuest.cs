@@ -1,21 +1,39 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 public class GeneralQuest : MonoBehaviour
 {
     public Transform[] QuestItems;
     [HideInInspector] public bool questIsActive;
     [HideInInspector] public int collectedItems;
+    public bool questComplete;
 
     [SerializeField] private GameObject gameManager;
+
+    // UI Variables
+    [SerializeField] private GameObject questProgression;
+    private TextMeshProUGUI questText;
+    CompassManager compassManager;
 
     private void Start()
     {
         DeactivateQuest();
         collectedItems = 0;
         questIsActive = false;
+        questComplete = false;
+
+        questText = questProgression.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+        if (questText == null)
+            Debug.LogError("GeneralQuest: GeneralQuest component not found");
+
+        compassManager = gameManager.GetComponent<CompassManager>();
+        if (compassManager == null)
+            Debug.LogError("GeneralQuest: CompassManager component not found on GameManager object");
     }
+
     public void ActivateQuest()
     {
         collectedItems = 0;
@@ -27,11 +45,12 @@ public class GeneralQuest : MonoBehaviour
             item.gameObject.SetActive(true);
         }
 
-        CompassManager compassManager = gameManager.GetComponent<CompassManager>();
-        if (compassManager == null)
-            Debug.LogError("GeneralQuest: CompassManager component not found on GameManager object");
-
+        // Update compass
         compassManager.OnQuestActivate(new List<Transform>(QuestItems));
+
+        // Update UI
+        questProgression.SetActive(true);
+        UpdateUI();
     }
 
     public void DeactivateQuest()
@@ -45,22 +64,14 @@ public class GeneralQuest : MonoBehaviour
         }
     }
 
-    private void OnGUI()
-    {
-        if (questIsActive)
-        {
-            if(collectedItems < QuestItems.Length)
-            {
-                GUILayout.BeginArea(new Rect(0, 0, Screen.width, Screen.height));
-                GUILayout.Label($"<color='black'><size=40>{collectedItems}/{QuestItems.Length}</size></color>");
-                GUILayout.EndArea();
-            }
-            else
-            {
-                GUILayout.BeginArea(new Rect(0, 0, Screen.width, Screen.height));
-                GUILayout.Label($"<color='black'><size=40>Quest completed!</size></color>");
-                GUILayout.EndArea();
-            }
+    public void UpdateUI() {
+        if (collectedItems < QuestItems.Length) {
+            questText.text = collectedItems + " out of " + QuestItems.Length + " items collected";
+
+        } else {
+            questText.text = "Quest complete! Go back to QuestNPC";
+            compassManager.OnQuestActivate(new List<Transform> { transform });
+            questComplete = true; // this shouldn't be checked in the UpdateUI() method but whatever
         }
     }
 }
