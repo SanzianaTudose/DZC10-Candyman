@@ -373,36 +373,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6549038625237818060, guid: 533d925296d79b34d8d0b1863d9d413a, type: 3}
   m_PrefabInstance: {fileID: 1101196962}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &156704440
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 156704441}
-  m_Layer: 0
-  m_Name: Compass (Missing Prefab)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &156704441
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 156704440}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 322920034}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &157575522
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -428,7 +398,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5298577894012593632, guid: 0ad8287f266b42d45b66410e96da65f3, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5298577894012593632, guid: 0ad8287f266b42d45b66410e96da65f3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -947,13 +917,7 @@ RectTransform:
   m_Children:
   - {fileID: 2099563281}
   - {fileID: 19178595}
-  - {fileID: 1359712577}
-  - {fileID: 600873941107121177}
   - {fileID: 340570471}
-  - {fileID: 156704441}
-  - {fileID: 619440175}
-  - {fileID: 1866368701}
-  - {fileID: 600873941107121178}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1252,36 +1216,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b7707b92241f7c4cab19a1385fc9c69, type: 3}
---- !u!1 &619440174
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 619440175}
-  m_Layer: 0
-  m_Name: Compass (Missing Prefab)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &619440175
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 619440174}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 322920034}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &620164640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1864,11 +1798,6 @@ PrefabInstance:
     - {fileID: 1993782440016715769, guid: c3e35672cf1e445458b0758e0e8615be, type: 3}
     - {fileID: 1993782439325888736, guid: c3e35672cf1e445458b0758e0e8615be, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c3e35672cf1e445458b0758e0e8615be, type: 3}
---- !u!1 &1017918100 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 600873940374957708, guid: f005fc086fd2333469f817b1402cfeee, type: 3}
-  m_PrefabInstance: {fileID: 600873941107121176}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1076243680 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6549038624801422135, guid: 533d925296d79b34d8d0b1863d9d413a, type: 3}
@@ -2014,22 +1943,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5815040e73485f4b9fa8b63fc40bc4b, type: 3}
---- !u!1 &1258026007
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 600873941107121177}
-  m_Layer: 0
-  m_Name: Compass (Missing Prefab)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1001 &1278419726
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2224,7 +2137,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3667418004917088030, guid: 5b7707b92241f7c4cab19a1385fc9c69, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 1.22
       objectReference: {fileID: 0}
     - target: {fileID: 3667418004917088030, guid: 5b7707b92241f7c4cab19a1385fc9c69, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2332,36 +2245,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6549038623629773372, guid: 533d925296d79b34d8d0b1863d9d413a, type: 3}
   m_PrefabInstance: {fileID: 1422584669}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1359712576
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1359712577}
-  m_Layer: 0
-  m_Name: Compass (Missing Prefab)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1359712577
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359712576}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 322920034}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1364626480 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6549038625361809827, guid: 533d925296d79b34d8d0b1863d9d413a, type: 3}
@@ -3115,36 +2998,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1846513663}
   m_CullTransparentMesh: 1
---- !u!1 &1866368700
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1866368701}
-  m_Layer: 0
-  m_Name: Compass (Missing Prefab)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1866368701
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1866368700}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 322920034}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1876801247 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1966921580536421640, guid: c3e35672cf1e445458b0758e0e8615be, type: 3}
@@ -3639,122 +3492,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6549038624801422135, guid: 533d925296d79b34d8d0b1863d9d413a, type: 3}
   m_PrefabInstance: {fileID: 1278419726}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &600873941107121176
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 322920034}
-    m_Modifications:
-    - target: {fileID: 600873940374957708, guid: f005fc086fd2333469f817b1402cfeee, type: 3}
-      propertyPath: m_Name
-      value: Compass
-      objectReference: {fileID: 0}
-    - target: {fileID: 600873940374957709, guid: f005fc086fd2333469f817b1402cfeee, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 600873940374957709, guid: f005fc086fd2333469f817b1402cfeee, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 600873940374957709, guid: f005fc086fd2333469f817b1402cfeee, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 600873940374957709, guid: f005fc086fd2333469f817b1402cfeee, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 600873940374957709, guid: f005fc086fd2333469f817b1402cfeee, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 600873940374957709, guid: f005fc086fd2333469f817b1402cfeee, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 600873940374957709, guid: f005fc086fd2333469f817b1402cfeee, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 600873940374957709, guid: f005fc086fd2333469f817b1402cfeee, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 600873940374957709, guid: f005fc086fd2333469f817b1402cfeee, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 600873940374957709, guid: f005fc086fd2333469f817b1402cfeee, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 600873940374957709, guid: f005fc086fd2333469f817b1402cfeee, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 600873940374957709, guid: f005fc086fd2333469f817b1402cfeee, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 600873940374957709, guid: f005fc086fd2333469f817b1402cfeee, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 600873940374957709, guid: f005fc086fd2333469f817b1402cfeee, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 600873940374957709, guid: f005fc086fd2333469f817b1402cfeee, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 600873940374957709, guid: f005fc086fd2333469f817b1402cfeee, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 600873940374957709, guid: f005fc086fd2333469f817b1402cfeee, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -80
-      objectReference: {fileID: 0}
-    - target: {fileID: 600873940374957709, guid: f005fc086fd2333469f817b1402cfeee, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -80
-      objectReference: {fileID: 0}
-    - target: {fileID: 600873940374957709, guid: f005fc086fd2333469f817b1402cfeee, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 600873940374957709, guid: f005fc086fd2333469f817b1402cfeee, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 600873940374957709, guid: f005fc086fd2333469f817b1402cfeee, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f005fc086fd2333469f817b1402cfeee, type: 3}
---- !u!4 &600873941107121177
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1258026007}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 322920034}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &600873941107121178 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 600873941107121176}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1661793453174483494
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3765,7 +3502,7 @@ PrefabInstance:
     - target: {fileID: 1661793452299034250, guid: a34bf0854e5c0e4429e050593f0b415d, type: 3}
       propertyPath: compassObject
       value: 
-      objectReference: {fileID: 1017918100}
+      objectReference: {fileID: 0}
     - target: {fileID: 1661793452299034252, guid: a34bf0854e5c0e4429e050593f0b415d, type: 3}
       propertyPath: nameText
       value: 
