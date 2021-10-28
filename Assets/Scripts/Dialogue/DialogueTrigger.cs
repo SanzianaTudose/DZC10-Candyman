@@ -14,8 +14,10 @@ public class DialogueTrigger : MonoBehaviour
     }
 
     public virtual void TriggerDialogue(int index) {
-        if (index > dialogue.Length)
+        if (index >= dialogue.Length) {
             Debug.LogWarning("DialogueTrigger: index too big");
+            return;
+        }
 
        dialogueManager.StartDialogue(dialogue[index]);
     }
@@ -24,10 +26,9 @@ public class DialogueTrigger : MonoBehaviour
         dialogueManager.EndDialogue();
     }
     public void TriggerFinalDialogue(int index) {
-        if (index > dialogue.Length)
+        if (index >= dialogue.Length)
             Debug.LogWarning("DialogueTrigger: index too big");
 
         dialogueManager.FinalDialogue(dialogue[index]);
     }
-
 }
