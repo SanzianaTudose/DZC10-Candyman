@@ -955,34 +955,12 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 1}
---- !u!1 &1611789479 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6700393671451552400, guid: 68de5778c1fa2ec42bcf71b2b40569f4, type: 3}
-  m_PrefabInstance: {fileID: 1997489592}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1611789480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1611789479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4737dec69a3aba64ab46bd667c417401, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-  - npcName: QuestNPC
-    sentence: Hello, would you like a quest?
-  - npcName: QuestNPC
-    sentence: Congrats you finished the quest.
 --- !u!114 &1611789481 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7067648709331284288, guid: 68de5778c1fa2ec42bcf71b2b40569f4, type: 3}
   m_PrefabInstance: {fileID: 1997489592}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1611789479}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ddbadf403fa2a74aa809d8e7125e7be, type: 3}
@@ -1038,14 +1016,6 @@ PrefabInstance:
     - target: {fileID: 1135002053291185623, guid: b9800615734725646aafdc678d65f26e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5325360214205951592, guid: b9800615734725646aafdc678d65f26e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.74
-      objectReference: {fileID: 0}
-    - target: {fileID: 5325360214205951592, guid: b9800615734725646aafdc678d65f26e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6996128154543534563, guid: b9800615734725646aafdc678d65f26e, type: 3}
       propertyPath: m_Name
@@ -1282,42 +1252,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 874103823909540683, guid: 68de5778c1fa2ec42bcf71b2b40569f4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 874103823909540683, guid: 68de5778c1fa2ec42bcf71b2b40569f4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 874103823909540683, guid: 68de5778c1fa2ec42bcf71b2b40569f4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 6.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 959200602859411546, guid: 68de5778c1fa2ec42bcf71b2b40569f4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 959200602859411546, guid: 68de5778c1fa2ec42bcf71b2b40569f4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 959200602859411546, guid: 68de5778c1fa2ec42bcf71b2b40569f4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 5.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 2945419304398589546, guid: 68de5778c1fa2ec42bcf71b2b40569f4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2945419304398589546, guid: 68de5778c1fa2ec42bcf71b2b40569f4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2945419304398589546, guid: 68de5778c1fa2ec42bcf71b2b40569f4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.12
-      objectReference: {fileID: 0}
     - target: {fileID: 6700393671451552400, guid: 68de5778c1fa2ec42bcf71b2b40569f4, type: 3}
       propertyPath: m_Name
       value: QuestNPC
@@ -1378,18 +1312,6 @@ PrefabInstance:
       propertyPath: interactText
       value: 
       objectReference: {fileID: 1599202439}
-    - target: {fileID: 7543768773147774544, guid: 68de5778c1fa2ec42bcf71b2b40569f4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7543768773147774544, guid: 68de5778c1fa2ec42bcf71b2b40569f4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7543768773147774544, guid: 68de5778c1fa2ec42bcf71b2b40569f4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 3.56
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68de5778c1fa2ec42bcf71b2b40569f4, type: 3}
 --- !u!1001 &1211547297407255925
