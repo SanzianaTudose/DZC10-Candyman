@@ -9,8 +9,8 @@ public class PanicMeterController : MonoBehaviour
     public Slider panicMeter;
     private float startValue = 0.0f;
     public Camera mainCamera;
-    public float lowFov = 40.0f;
-    public float defaultFov = 56.0f;
+    public float lowFov;
+    public float defaultFov;
 
     // Start is called before the first frame update
     void Awake()
@@ -43,7 +43,7 @@ public class PanicMeterController : MonoBehaviour
             mainCamera.fieldOfView = lowFov;
         } else
         {
-            mainCamera.fieldOfView = 56.0f;
+            mainCamera.fieldOfView = defaultFov;
         }
     }
 
