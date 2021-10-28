@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PanicMeterController : MonoBehaviour
 {
@@ -30,6 +31,7 @@ public class PanicMeterController : MonoBehaviour
     {
       
         CameraSettings();
+        ResetScene();
         
     }
 
@@ -42,6 +44,17 @@ public class PanicMeterController : MonoBehaviour
         } else
         {
             mainCamera.fieldOfView = 56.0f;
+        }
+    }
+
+
+    private void ResetScene()
+    {
+        if(panicMeter.value == 1)
+        {
+            Scene scene = SceneManager.GetActiveScene(); 
+            SceneManager.LoadScene(scene.name);
+            
         }
     }
 
