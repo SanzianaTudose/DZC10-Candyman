@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerInteraction : MonoBehaviour
 {
@@ -29,6 +30,7 @@ public class PlayerInteraction : MonoBehaviour
                 interactText.gameObject.SetActive(false);
                 dialogueTrigger.TriggerDialogue(0);
             } else if (quest.questComplete) {
+                interactText.gameObject.SetActive(false);
                 dialogueTrigger.TriggerFinalDialogue(1);
             }
         }
@@ -61,5 +63,9 @@ public class PlayerInteraction : MonoBehaviour
 
     public void OnQuestReject() {
         dialogueTrigger.EndDialogue();
+    }
+
+    public void OnFinalDialogueEnd() {
+        SceneManager.LoadScene("EndScene", LoadSceneMode.Single);
     }
 }

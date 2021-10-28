@@ -9,6 +9,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject dialogueBox;
     [SerializeField] private GameObject candyChoices;
     [SerializeField] private GameObject questChoices;
+    [SerializeField] private GameObject finalChoices;
     [SerializeField] private GameObject compass;
     [SerializeField] private TMP_Text nameText;
     [SerializeField] private TMP_Text dialogueText;
@@ -42,5 +43,6 @@ public class DialogueManager : MonoBehaviour
 
         compass.SetActive(false);
         dialogueBox.SetActive(true);
+        finalChoices.SetActive(true);
     }
 }
