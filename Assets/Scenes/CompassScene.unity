@@ -2837,10 +2837,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7067648709331284288, guid: 68de5778c1fa2ec42bcf71b2b40569f4, type: 3}
-      propertyPath: gameManager
-      value: 
-      objectReference: {fileID: 1462447657}
-    - target: {fileID: 7067648709331284288, guid: 68de5778c1fa2ec42bcf71b2b40569f4, type: 3}
       propertyPath: interactText
       value: 
       objectReference: {fileID: 2099563278}
