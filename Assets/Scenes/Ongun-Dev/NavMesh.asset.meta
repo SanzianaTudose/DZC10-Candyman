@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Scenes/Ongun-Dev/NavMesh.asset.meta
 guid: 65e1adffde874da479bc3587744cb04a
 NativeFormatImporter:
+=======
+guid: 433c47ac2e5cfcf4299046578ba331c1
+folderAsset: yes
+DefaultImporter:
+>>>>>>> combine-player+quests:Assets/Prefabs/EndScene.meta
   externalObjects: {}
   mainObjectFileID: 0
   userData: 

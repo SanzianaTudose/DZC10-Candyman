@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CandymanController : MonoBehaviour
 {
@@ -20,7 +21,7 @@ public class CandymanController : MonoBehaviour
 
     private void Update() {
         if (!playerChoseCandy && playerInRange && Input.GetKeyDown(KeyCode.E)) {
-            dialogueTrigger.TriggerDialogue();
+            dialogueTrigger.TriggerDialogue(0);
             interactText.gameObject.SetActive(false);
         }
     }
@@ -47,5 +48,6 @@ public class CandymanController : MonoBehaviour
         playerChoseCandy = true;
 
         Debug.Log(button.name);
+        SceneManager.LoadScene("CompassScene", LoadSceneMode.Single);
     }
 }

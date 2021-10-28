@@ -142,8 +142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Candyman
-    sentence: Would you like to buy some candy?
+  - npcName: Candyman
+    sentence: Would you like some candy?
 --- !u!114 &7445737550580663520
 MonoBehaviour:
   m_ObjectHideFlags: 0
