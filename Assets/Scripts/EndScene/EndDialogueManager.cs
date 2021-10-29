@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class EndDialogueManager : MonoBehaviour
@@ -35,6 +36,6 @@ public class EndDialogueManager : MonoBehaviour
     }
 
     private void OnEndGame() {
-        Debug.Log("ROLL CREDITS");
+        SceneManager.LoadScene("EndMenu");
     }
 }
