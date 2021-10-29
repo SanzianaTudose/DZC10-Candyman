@@ -623,7 +623,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &632750146 stripped
 MonoBehaviour:
@@ -1023,6 +1023,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5325360214205951592, guid: b9800615734725646aafdc678d65f26e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5325360214205951592, guid: b9800615734725646aafdc678d65f26e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 6996128154543534563, guid: b9800615734725646aafdc678d65f26e, type: 3}
       propertyPath: m_Name
       value: CastleMain
@@ -1194,78 +1202,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4400389941114538689, guid: 7323900794f230a4c90c9b666d54ad29, type: 3}
   m_PrefabInstance: {fileID: 4400389940338843294}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1980974820
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7445737550580478202, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7445737550580478202, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7445737550580478202, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 7445737550580478202, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -3.54
-      objectReference: {fileID: 0}
-    - target: {fileID: 7445737550580478202, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7445737550580478202, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7445737550580478202, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7445737550580478202, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7445737550580478202, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7445737550580478202, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7445737550580478202, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7445737550580663520, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
-      propertyPath: interactText
-      value: 
-      objectReference: {fileID: 1599202439}
-    - target: {fileID: 7445737550580730056, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
-      propertyPath: m_Name
-      value: Candyman
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
---- !u!114 &1980974821 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7445737550580663520, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
-  m_PrefabInstance: {fileID: 1980974820}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61d72220b307aee4b85655fc2b1bce45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1997489592
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1310,7 +1246,7 @@ PrefabInstance:
       objectReference: {fileID: 1821520282}
     - target: {fileID: 6700393671451552412, guid: 68de5778c1fa2ec42bcf71b2b40569f4, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6700393671451552412, guid: 68de5778c1fa2ec42bcf71b2b40569f4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1376,11 +1312,11 @@ PrefabInstance:
     - target: {fileID: 4400389939859598774, guid: 7323900794f230a4c90c9b666d54ad29, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1980974821}
+      objectReference: {fileID: 0}
     - target: {fileID: 4400389939917016374, guid: 7323900794f230a4c90c9b666d54ad29, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1980974821}
+      objectReference: {fileID: 0}
     - target: {fileID: 4400389940002202016, guid: 7323900794f230a4c90c9b666d54ad29, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1388,7 +1324,7 @@ PrefabInstance:
     - target: {fileID: 4400389940873089204, guid: 7323900794f230a4c90c9b666d54ad29, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1980974821}
+      objectReference: {fileID: 0}
     - target: {fileID: 4400389941114538688, guid: 7323900794f230a4c90c9b666d54ad29, type: 3}
       propertyPath: m_Name
       value: 'Dialogue '
