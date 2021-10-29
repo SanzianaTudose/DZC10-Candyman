@@ -1009,14 +1009,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1131288343, guid: a34bf0854e5c0e4429e050593f0b415d, type: 3}
+      propertyPath: compassObject
+      value: 
+      objectReference: {fileID: 622219036}
     - target: {fileID: 1288860841, guid: a34bf0854e5c0e4429e050593f0b415d, type: 3}
       propertyPath: castleDoor
       value: 
       objectReference: {fileID: 974469799}
-    - target: {fileID: 1661793452299034250, guid: a34bf0854e5c0e4429e050593f0b415d, type: 3}
-      propertyPath: compassObject
-      value: 
-      objectReference: {fileID: 622219036}
     - target: {fileID: 1661793452299034252, guid: a34bf0854e5c0e4429e050593f0b415d, type: 3}
       propertyPath: compass
       value: 
@@ -1097,28 +1097,13 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1266344860}
-    m_RemovedComponents:
-    - {fileID: 1661793452299034250, guid: a34bf0854e5c0e4429e050593f0b415d, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a34bf0854e5c0e4429e050593f0b415d, type: 3}
 --- !u!1 &1131288342 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1661793452299034254, guid: a34bf0854e5c0e4429e050593f0b415d, type: 3}
   m_PrefabInstance: {fileID: 1131288341}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1131288343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1131288342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2be33bb98caca34593649f709838931, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  compassObject: {fileID: 622219036}
-  objectIndicatorPrefab: {fileID: 6466138214673091139, guid: f2de84ce90bdf8342893a94c3a9e82d8, type: 3}
 --- !u!224 &1145040054 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6549038624801422135, guid: 533d925296d79b34d8d0b1863d9d413a, type: 3}
@@ -1845,6 +1830,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1364767523990589890, guid: 063d51fbcc0e85743bc55d9f14b03cb7, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5451804753569537174, guid: 063d51fbcc0e85743bc55d9f14b03cb7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1853,6 +1842,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 655307937}
+    - target: {fileID: 5993816093017391262, guid: 063d51fbcc0e85743bc55d9f14b03cb7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2214398431827610470, guid: dfb502fd87ed94b42a458c8d4ecab1b4, type: 3}
     - target: {fileID: 6591286681928396519, guid: 063d51fbcc0e85743bc55d9f14b03cb7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
