@@ -46,7 +46,7 @@ public class Attack : Grounded
     private void MiniGame()
     {
         player.speed = 0;
-        
+
         if(Input.GetKeyDown(KeyCode.E))
         {
             eCount += 1;
