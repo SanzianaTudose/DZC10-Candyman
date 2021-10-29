@@ -242,6 +242,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1266344869, guid: a5815040e73485f4b9fa8b63fc40bc4b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3776366647590001376, guid: a5815040e73485f4b9fa8b63fc40bc4b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3776366647590001379, guid: a5815040e73485f4b9fa8b63fc40bc4b, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -309,6 +317,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1131288343, guid: a34bf0854e5c0e4429e050593f0b415d, type: 3}
+      propertyPath: compassObject
+      value: 
+      objectReference: {fileID: 106753617}
     - target: {fileID: 1288860841, guid: a34bf0854e5c0e4429e050593f0b415d, type: 3}
       propertyPath: castleDoor
       value: 
