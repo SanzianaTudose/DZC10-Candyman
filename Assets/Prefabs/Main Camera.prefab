@@ -98,4 +98,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   smoothSpeed: 1000
-  offset: {x: 20, y: 90, z: 0}
+  offset: {x: 0, y: 90, z: -30}
+  rotationVector: {x: 0, y: 0, z: 0}
