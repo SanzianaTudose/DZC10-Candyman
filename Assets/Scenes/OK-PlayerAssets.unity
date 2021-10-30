@@ -220,9 +220,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 5020810794589953412}
-  smoothSpeed: 10
-  offset: {x: 20, y: 60, z: 0}
-  hitBuffer: 0.5
+  smoothSpeed: 1000
+  offset: {x: 0, y: 60, z: 0}
 --- !u!1 &1347255704
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,6 +418,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3876605055348264384, guid: 6363122249dddac4d9c0013409c31245, type: 3}
+      propertyPath: turnSmoothTime
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 5060549315722304169, guid: 6363122249dddac4d9c0013409c31245, type: 3}
       propertyPath: m_Name
       value: Player
