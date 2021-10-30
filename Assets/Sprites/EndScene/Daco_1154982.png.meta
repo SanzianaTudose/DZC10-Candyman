@@ -1,13 +1,7 @@
 fileFormatVersion: 2
-guid: b7ef0787225a8c74aa23f98719eef6ff
+guid: 0235e5dc3e1981242b34c444f81452ed
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -714706815116973953
-    second: Mountain_School_0
-  - first:
-      213: -1809154020312854869
-    second: Mountain_School_1
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -47,13 +41,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 273, w: 0}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -107,49 +101,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Mountain_School_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1768
-        height: 1152
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f78e66630f9d416f0800000000000000
-      internalID: -714706815116973953
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mountain_School_1
-      rect:
-        serializedVersion: 2
-        x: 1987
-        y: 408
-        width: 61
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bae484bf00894e6e0800000000000000
-      internalID: -1809154020312854869
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
