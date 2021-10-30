@@ -13,7 +13,7 @@ public class CompassManager : MonoBehaviour {
     private Transform indicatorsContainer;
     private List<Transform> indicators;
 
-    private Quaternion dirOffset = Quaternion.Euler(0, 0, -90);
+    private Quaternion dirOffset = Quaternion.Euler(0, 0, 0);
 
     void Start() {
         player = PlayerManager.instance.player.transform;
