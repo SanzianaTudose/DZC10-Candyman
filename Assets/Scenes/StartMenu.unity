@@ -2726,10 +2726,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8619773817673951589, guid: 740498d73affffd4caf7b8732de55f44, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8619773818676095623, guid: 740498d73affffd4caf7b8732de55f44, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2817,10 +2813,6 @@ PrefabInstance:
     - target: {fileID: 8619773818676095644, guid: 740498d73affffd4caf7b8732de55f44, type: 3}
       propertyPath: m_Name
       value: SceneChanger
-      objectReference: {fileID: 0}
-    - target: {fileID: 8619773818676095644, guid: 740498d73affffd4caf7b8732de55f44, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 740498d73affffd4caf7b8732de55f44, type: 3}
