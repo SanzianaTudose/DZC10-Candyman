@@ -250,6 +250,10 @@ PrefabInstance:
       propertyPath: compassObject
       value: 
       objectReference: {fileID: 106753617}
+    - target: {fileID: 1661793452299034250, guid: a34bf0854e5c0e4429e050593f0b415d, type: 3}
+      propertyPath: objectIndicatorNPCPrefab
+      value: 
+      objectReference: {fileID: 6466138214673091139, guid: 0089e919a89dae94498ede39be61c482, type: 3}
     - target: {fileID: 1661793452299034252, guid: a34bf0854e5c0e4429e050593f0b415d, type: 3}
       propertyPath: compass
       value: 
@@ -1240,6 +1244,10 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 322333481}
+    - target: {fileID: 6700393671451552411, guid: 68de5778c1fa2ec42bcf71b2b40569f4, type: 3}
+      propertyPath: questComplete
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6700393671451552411, guid: 68de5778c1fa2ec42bcf71b2b40569f4, type: 3}
       propertyPath: questProgression
       value: 

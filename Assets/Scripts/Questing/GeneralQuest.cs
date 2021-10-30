@@ -71,6 +71,7 @@ public class GeneralQuest : MonoBehaviour
         } else {
             questText.text = "Quest complete! Go back to the King";
             compassManager.OnQuestActivate(new List<Transform> { transform });
+            
             questComplete = true; // this shouldn't be checked in the UpdateUI() method but whatever
         }
     }
