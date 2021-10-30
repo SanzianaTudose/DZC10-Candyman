@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Prefabs/Player/ManNeko_Assets/Adventurer Blake/Materials.meta
 guid: e9086bf4263d80844aa3e7bcfb30ac7e
+=======
+guid: 7b2137cdcb1831a47ab9098f88117ba0
+>>>>>>> combine-player+quests:Assets/Other Assets.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

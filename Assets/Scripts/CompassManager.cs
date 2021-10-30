@@ -7,6 +7,7 @@ public class CompassManager : MonoBehaviour {
     [SerializeField] private GameObject compassObject;
     private List<Transform> targetObjects;
     [SerializeField] private GameObject objectIndicatorPrefab;
+    [SerializeField] private GameObject objectIndicatorNPCPrefab;
     private Transform player;
 
     private Transform indicatorsContainer;
@@ -40,7 +41,13 @@ public class CompassManager : MonoBehaviour {
 
     private void InstantiateIndicators(List<Transform> questObjects) {
         foreach (Transform target in questObjects) {
-            GameObject newIndicator = Instantiate(objectIndicatorPrefab, objectIndicatorPrefab.transform.position, objectIndicatorPrefab.transform.rotation);
+            GameObject prefabToUse;
+            if (target.name == "QuestNPC")
+                prefabToUse = objectIndicatorNPCPrefab;
+            else
+                prefabToUse = objectIndicatorPrefab;
+
+            GameObject newIndicator = Instantiate(prefabToUse, prefabToUse.transform.position, prefabToUse.transform.rotation);
             newIndicator.transform.SetParent(indicatorsContainer, false);
 
             indicators.Add(newIndicator.transform);

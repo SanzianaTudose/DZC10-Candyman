@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Animations/Player/PlayerAnimatorController.controller.meta
+guid: 783996a394feed14186e2a651f4dc169
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+=======
+guid: 357d4f8c876633f48b6d413432065524
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+>>>>>>> combine-player+quests:Assets/Animations/SceneTransition/Fade_Out.anim.meta
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

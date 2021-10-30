@@ -163,10 +163,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - npcName: QuestNPC
-    sentence: Hello, would you like a quest?
-  - npcName: QuestNPC
-    sentence: Congrats you finished the quest.
+  - npcName: King of Belgium
+    sentence: "Good day and welcome to Belgium. You look like a true hero!  \n\nI
+      need to summon Snow White in order to save the winter harvest festival. For
+      that I request that you kidnap 7 dwarves. Would you like to take on this quest?"
+  - npcName: King of Belgium
+    sentence: 'What is the meaning of this?! How could you be so cruel to these poor
+      children?
+
+
+      I reckon it is time you go back where you came from...  '
 --- !u!1 &6700393671621366316
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,7 +224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 865144506001304253, guid: 03a0441054bd70942a433a905339fdef, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -98.24
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 865144506001304253, guid: 03a0441054bd70942a433a905339fdef, type: 3}
       propertyPath: m_LocalPosition.y
@@ -226,7 +232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 865144506001304253, guid: 03a0441054bd70942a433a905339fdef, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 21.14
+      value: 4.38
       objectReference: {fileID: 0}
     - target: {fileID: 865144506001304253, guid: 03a0441054bd70942a433a905339fdef, type: 3}
       propertyPath: m_LocalRotation.w
@@ -280,15 +286,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 865144506001304253, guid: 03a0441054bd70942a433a905339fdef, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.65
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 865144506001304253, guid: 03a0441054bd70942a433a905339fdef, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.22
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 865144506001304253, guid: 03a0441054bd70942a433a905339fdef, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 26.67
+      value: 3.31
       objectReference: {fileID: 0}
     - target: {fileID: 865144506001304253, guid: 03a0441054bd70942a433a905339fdef, type: 3}
       propertyPath: m_LocalRotation.w
@@ -342,15 +348,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 865144506001304253, guid: 03a0441054bd70942a433a905339fdef, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -53.4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 865144506001304253, guid: 03a0441054bd70942a433a905339fdef, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 865144506001304253, guid: 03a0441054bd70942a433a905339fdef, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -18.2
+      value: 2.361
       objectReference: {fileID: 0}
     - target: {fileID: 865144506001304253, guid: 03a0441054bd70942a433a905339fdef, type: 3}
       propertyPath: m_LocalRotation.w
@@ -404,15 +410,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 865144506001304253, guid: 03a0441054bd70942a433a905339fdef, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -37.6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 865144506001304253, guid: 03a0441054bd70942a433a905339fdef, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 865144506001304253, guid: 03a0441054bd70942a433a905339fdef, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -17.8
+      value: 6.14
       objectReference: {fileID: 0}
     - target: {fileID: 865144506001304253, guid: 03a0441054bd70942a433a905339fdef, type: 3}
       propertyPath: m_LocalRotation.w

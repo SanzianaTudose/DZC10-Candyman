@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Prefabs/Player/ManNeko_Assets/Adventurer Blake/Textures.meta
 guid: 98fde24361fb4734e84d01aa4ecc15b3
+=======
+guid: d010c74f840ebeb46956f57f7c1cd2bb
+>>>>>>> combine-player+quests:Assets/Prefabs/SchoolScene.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
