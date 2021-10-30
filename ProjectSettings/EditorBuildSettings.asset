@@ -12,11 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/SchoolScene.unity
     guid: 8c75dff7721173c4da321ff1d70056bb
   - enabled: 1
-    path: Assets/Scenes/CompassScene.unity
+    path: Assets/Scenes/MainScene.unity
     guid: 1a02f584f9d9c8b4791d0301a6c4c72b
-  - enabled: 1
-    path: Assets/Scenes/QuestStoryScene.unity
-    guid: 752f41085c657234bb9326f6020b5cc5
   - enabled: 1
     path: Assets/Scenes/EndScene.unity
     guid: ea8f517c69ef8b144af8dfada5965057

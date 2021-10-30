@@ -12,24 +12,15 @@ public class PanicMeterController : MonoBehaviour
     public float lowFov;
     public float defaultFov;
 
-    // Start is called before the first frame update
-    void Awake()
-    {
-        
-
-
-    }
-
     private void Start()
     {
         //panic meter  start value
         panicMeter.value = startValue;
     }
-    
+
 
     private void Update()
     {
-      
         CameraSettings();
         ResetScene();
         
@@ -40,10 +31,10 @@ public class PanicMeterController : MonoBehaviour
     {
         if(panicMeter.value > 0.8f)
         {
-            mainCamera.fieldOfView = lowFov;
+            mainCamera.fieldOfView = lowFov /1.75f;
         } else
         {
-            mainCamera.fieldOfView = defaultFov;
+            mainCamera.fieldOfView = defaultFov /1.75f;
         }
     }
 
