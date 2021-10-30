@@ -34,7 +34,6 @@ public class DialogueManager : MonoBehaviour
         compass.SetActive(true);
         candyChoices.SetActive(false);
         questChoices.SetActive(false);
-
     }
 
     public void FinalDialogue(Dialogue dialogue) {
