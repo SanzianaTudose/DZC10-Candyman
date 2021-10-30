@@ -7,6 +7,9 @@ TagManager:
   - CinemachineTarget
   - Attack
   - Meter
+  - Candy2
+  - Candy3
+  - Candy1
   layers:
   - Default
   - TransparentFX

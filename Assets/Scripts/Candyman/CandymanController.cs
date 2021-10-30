@@ -47,7 +47,18 @@ public class CandymanController : MonoBehaviour
         dialogueTrigger.EndDialogue();
         playerChoseCandy = true;
 
-        Debug.Log(button.name);
-        SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
+        if (button.gameObject.tag == "Candy1")
+        {
+            Debug.Log("Speeed");
+        }
+        else if (button.gameObject.tag == "Candy2")
+        {
+            Debug.Log("More Vision");
+        }
+        else if (button.gameObject.tag == "Candy3") 
+        { 
+            Debug.Log("No power-up"); 
+        }
+            //SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
     }
 }
