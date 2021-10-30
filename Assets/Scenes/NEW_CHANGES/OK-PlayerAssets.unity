@@ -418,6 +418,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2228143628452824512, guid: 6363122249dddac4d9c0013409c31245, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3876605055348263998, guid: 6363122249dddac4d9c0013409c31245, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3876605055348263998, guid: 6363122249dddac4d9c0013409c31245, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3876605055348264384, guid: 6363122249dddac4d9c0013409c31245, type: 3}
       propertyPath: turnSmoothTime
       value: 0.1
@@ -436,7 +448,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8098025263892244666, guid: 6363122249dddac4d9c0013409c31245, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.015
+      value: 4.01
       objectReference: {fileID: 0}
     - target: {fileID: 8098025263892244666, guid: 6363122249dddac4d9c0013409c31245, type: 3}
       propertyPath: m_LocalPosition.z

@@ -2132,7 +2132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a93845e985a8cb41a48ed0b655015e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 0}
+  controller: {fileID: 3876605055348264385}
   speed: 6
   turnSmoothTime: 0.1
   isRunning: 0
