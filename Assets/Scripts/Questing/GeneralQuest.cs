@@ -69,8 +69,9 @@ public class GeneralQuest : MonoBehaviour
             questText.text = collectedItems + " out of " + QuestItems.Length + " items collected";
 
         } else {
-            questText.text = "Quest complete! Go back to QuestNPC";
+            questText.text = "Quest complete! Go back to the King";
             compassManager.OnQuestActivate(new List<Transform> { transform });
+            
             questComplete = true; // this shouldn't be checked in the UpdateUI() method but whatever
         }
     }

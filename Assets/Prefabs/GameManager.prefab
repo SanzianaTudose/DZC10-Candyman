@@ -93,3 +93,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   compassObject: {fileID: 0}
   objectIndicatorPrefab: {fileID: 6466138214673091139, guid: f2de84ce90bdf8342893a94c3a9e82d8, type: 3}
+  objectIndicatorNPCPrefab: {fileID: 6466138214673091139, guid: 0089e919a89dae94498ede39be61c482, type: 3}
