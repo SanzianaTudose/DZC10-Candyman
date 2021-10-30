@@ -48,6 +48,6 @@ public class CandymanController : MonoBehaviour
         playerChoseCandy = true;
 
         Debug.Log(button.name);
-        SceneManager.LoadScene("CompassScene", LoadSceneMode.Single);
+        SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
     }
 }

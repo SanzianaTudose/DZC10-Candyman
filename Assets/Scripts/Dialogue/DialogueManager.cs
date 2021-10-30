@@ -21,7 +21,7 @@ public class DialogueManager : MonoBehaviour
         compass.SetActive(false);
         dialogueBox.SetActive(true);
 
-        if (dialogue.npcName == "QuestNPC") {
+        if (dialogue.npcName == "King of Belgium") {
             questChoices.SetActive(true);
         }
         if (dialogue.npcName == "Candyman") {
@@ -34,7 +34,6 @@ public class DialogueManager : MonoBehaviour
         compass.SetActive(true);
         candyChoices.SetActive(false);
         questChoices.SetActive(false);
-
     }
 
     public void FinalDialogue(Dialogue dialogue) {
