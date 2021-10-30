@@ -417,8 +417,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 930fded28c6865340bed8b390cecde6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 1225849087}
-  speed: 6
+  controller: {fileID: 0}
+  speed: 10
   turnSmoothTime: 0.5
   isRunning: 0
 --- !u!143 &1225849087
