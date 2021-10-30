@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public CharacterController controller;
 
-    public float speed = 6f;
+    public float speed;
 
     public float turnSmoothTime;
 
@@ -14,6 +14,12 @@ public class PlayerController : MonoBehaviour
 
     public bool isRunning = false;
 
+    [HideInInspector]  public float defaultSpeed;
+
+    private void Start()
+    {
+        defaultSpeed = speed;
+    }
     // Update is called once per frame
     void Update()
     {

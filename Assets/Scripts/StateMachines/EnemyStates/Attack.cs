@@ -6,7 +6,7 @@ using UnityEngine.AI;
 
 public class Attack : Grounded
 {
-    private PlayerMovement player;
+    private PlayerController player;
     public PanicMeterController pMeter;
     private float addPanic = 0.0006f;
     private int eCount = 0;
@@ -16,9 +16,8 @@ public class Attack : Grounded
     {
         base.Enter();
         sm.rend.sharedMaterial = sm.materials[3]; // red material
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
-        
         pMeter = GameObject.FindGameObjectWithTag("Meter").GetComponent<PanicMeterController>();
+        player = sm.target.gameObject.GetComponent<PlayerController>();
 
     }
 
@@ -34,6 +33,7 @@ public class Attack : Grounded
 
     private void MiniGame()
     {
+        player.speed = 0;
 
         if (Input.GetKeyDown(KeyCode.E))
         {
@@ -41,13 +41,12 @@ public class Attack : Grounded
             if(eCount > 20)
             {
                 stateMachine.ChangeState(sm.idleState);
-                player.speed = 10;
+                player.speed = player.defaultSpeed;
                 eCount = 0;
             }
             
         }
     }
-    //stateMachine.ChangeState(sm.idleState);
 
     private void IncreasePanic()
     {
