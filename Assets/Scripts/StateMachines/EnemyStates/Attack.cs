@@ -17,6 +17,7 @@ public class Attack : Grounded
         base.Enter();
         sm.rend.sharedMaterial = sm.materials[3]; // red material
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+        
         pMeter = GameObject.FindGameObjectWithTag("Meter").GetComponent<PanicMeterController>();
 
     }
@@ -28,26 +29,13 @@ public class Attack : Grounded
         sm.FaceTarget(sm.target);   // Make sure to face towards the target
         IncreasePanic();
         MiniGame();
-  
 
-        // TODO Attack //
-        // ........... //
-        // TODO Attack //
-
-
-        /*bool successfulDodge = true;
-        if (successfulDodge)
-            stateMachine.ChangeState(sm.idleState);
-        else
-            // TODO die or add to panicmeter
-            return;*/
     }
 
     private void MiniGame()
     {
-        player.speed = 0;
 
-        if(Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             eCount += 1;
             if(eCount > 20)
