@@ -50,10 +50,9 @@ public class PanicMeterController : MonoBehaviour
 
     private void ResetScene()
     {
-        if(panicMeter.value == 1)
+        if (panicMeter.value == 1)
         {
-            Scene scene = SceneManager.GetActiveScene(); 
-            SceneManager.LoadScene(scene.name);
+            SceneManager.LoadScene("SchoolScene");
             
         }
     }
