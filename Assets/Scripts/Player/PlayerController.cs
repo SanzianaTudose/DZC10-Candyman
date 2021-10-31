@@ -18,6 +18,10 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        if (SetPlayerAttributes.Speed != float.NaN && SetPlayerAttributes.Speed != 0)
+        {
+            speed = SetPlayerAttributes.Speed;
+        }
         defaultSpeed = speed;
     }
     // Update is called once per frame

@@ -8,7 +8,6 @@ public class Patrol : Grounded
     public override void Enter()
     {
         base.Enter();
-        sm.rend.sharedMaterial = sm.materials[4]; // purple material
     }
 
     public override void UpdateLogic()

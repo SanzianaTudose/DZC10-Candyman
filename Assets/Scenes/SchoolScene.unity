@@ -618,6 +618,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerCopy
       objectReference: {fileID: 0}
+    - target: {fileID: 5060549315722304169, guid: 6363122249dddac4d9c0013409c31245, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 7235572321767279635, guid: 6363122249dddac4d9c0013409c31245, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8098025263892244666, guid: 6363122249dddac4d9c0013409c31245, type: 3}
       propertyPath: m_RootOrder
       value: 10
