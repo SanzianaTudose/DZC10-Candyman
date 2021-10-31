@@ -32,7 +32,7 @@ Transform:
   - {fileID: 5122335088764383049}
   - {fileID: 5077953206632784984}
   m_Father: {fileID: 1631824553945750927}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1631824553945750915
 GameObject:
@@ -68,6 +68,7 @@ Transform:
   m_LocalPosition: {x: 5, y: 2.5, z: -3.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 2754085431375106838}
   - {fileID: 1631824553914344760}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -87,7 +88,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631824553945750915}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -207,6 +208,68 @@ MonoBehaviour:
 
 
       I reckon it is time you go back where you came from...  '
+--- !u!1001 &518560468852914224
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1631824553945750927}
+    m_Modifications:
+    - target: {fileID: 2380770208722234150, guid: e6ca378d10380194ea089a10be02d95b, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2380770208722234150, guid: e6ca378d10380194ea089a10be02d95b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2380770208722234150, guid: e6ca378d10380194ea089a10be02d95b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 2380770208722234150, guid: e6ca378d10380194ea089a10be02d95b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2380770208722234150, guid: e6ca378d10380194ea089a10be02d95b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2380770208722234150, guid: e6ca378d10380194ea089a10be02d95b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2380770208722234150, guid: e6ca378d10380194ea089a10be02d95b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2380770208722234150, guid: e6ca378d10380194ea089a10be02d95b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2380770208722234150, guid: e6ca378d10380194ea089a10be02d95b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2380770208722234150, guid: e6ca378d10380194ea089a10be02d95b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2380770208722234150, guid: e6ca378d10380194ea089a10be02d95b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3044962524782457244, guid: e6ca378d10380194ea089a10be02d95b, type: 3}
+      propertyPath: m_Name
+      value: DireWarrior Blue Pf
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e6ca378d10380194ea089a10be02d95b, type: 3}
+--- !u!4 &2754085431375106838 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2380770208722234150, guid: e6ca378d10380194ea089a10be02d95b, type: 3}
+  m_PrefabInstance: {fileID: 518560468852914224}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1905784677142591151
 PrefabInstance:
   m_ObjectHideFlags: 0
