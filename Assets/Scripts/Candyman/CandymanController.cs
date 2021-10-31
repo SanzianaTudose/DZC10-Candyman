@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class CandymanController : MonoBehaviour
 {
     [SerializeField] private GameObject interactText;
+    [SerializeField] private CameraShake cameraShake;
     private DialogueTrigger dialogueTrigger;
 
     private bool playerInRange = false; // Don't display dialogue box when Player is not in range
@@ -59,6 +60,9 @@ public class CandymanController : MonoBehaviour
         { 
             Debug.Log("No power-up"); 
         }
+
+        cameraShake.startShake();
+
             //SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
     }
 }
