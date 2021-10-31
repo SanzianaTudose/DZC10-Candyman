@@ -4,19 +4,8 @@ using UnityEngine;
 
 public class CameraShake : MonoBehaviour
 {
-    [Header("Shake Variables")]
-    [SerializeField] float duration = 3f;
-    [SerializeField] float startMagnitude = 0.4f;
-    [SerializeField] float stepMagnitude = 0.1f;
 
-    public bool isShaking = false;
-
-    public void startShake() {
-        isShaking = true;
-        StartCoroutine(Shake());
-    }
-
-    public IEnumerator Shake() {
+    public IEnumerator Shake(float duration, float startMagnitude, float stepMagnitude) {
         Vector3 originalPos = transform.localPosition;
 
         float elapsed = 0.0f, magnitude = startMagnitude;
@@ -32,7 +21,6 @@ public class CameraShake : MonoBehaviour
             yield return null;
         }
 
-        isShaking = false;
         transform.localPosition = originalPos;
     }
 }

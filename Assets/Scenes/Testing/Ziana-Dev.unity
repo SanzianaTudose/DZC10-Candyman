@@ -186,6 +186,10 @@ PrefabInstance:
       propertyPath: interactText
       value: 
       objectReference: {fileID: 1104788741}
+    - target: {fileID: 7445737550580663520, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
+      propertyPath: sceneChanger
+      value: 
+      objectReference: {fileID: 886757095}
     - target: {fileID: 7445737550580730056, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
       propertyPath: m_Name
       value: Candyman
@@ -210,6 +214,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8619773818676095622, guid: 740498d73affffd4caf7b8732de55f44, type: 3}
+      propertyPath: duration
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8619773818676095622, guid: 740498d73affffd4caf7b8732de55f44, type: 3}
+      propertyPath: cameraShake
+      value: 
+      objectReference: {fileID: 364124449}
+    - target: {fileID: 8619773818676095622, guid: 740498d73affffd4caf7b8732de55f44, type: 3}
+      propertyPath: stepMagnitude
+      value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8619773818676095622, guid: 740498d73affffd4caf7b8732de55f44, type: 3}
+      propertyPath: startMagnitude
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8619773818676095623, guid: 740498d73affffd4caf7b8732de55f44, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -479,10 +499,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30ccad9eaeb2cba4e86fa4f9433833be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 15
-  startMagnitude: 0
-  stepMagnitude: 0.00009
-  isShaking: 0
 --- !u!4 &364124451 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8796201897317115261, guid: 9498bc9e9eb471c4687835aaaa09fe7a, type: 3}
@@ -555,6 +571,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5060549315722304169, guid: 6363122249dddac4d9c0013409c31245, type: 3}
   m_PrefabInstance: {fileID: 802188366}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &886757095 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8619773818676095622, guid: 740498d73affffd4caf7b8732de55f44, type: 3}
+  m_PrefabInstance: {fileID: 288989382}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2ae387db28187b4f9e8c12da17cf2b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &923193055
 GameObject:
   m_ObjectHideFlags: 0
