@@ -18,7 +18,6 @@ public class EnemySM : StateMachine
     public Material[] materials;
 
     [HideInInspector] public Transform target = null;   // Reference to the player
-    [HideInInspector] public Renderer rend = null;
     [HideInInspector] public NavMeshAgent agent = null;
 
     [HideInInspector] public Idle idleState;
@@ -34,10 +33,6 @@ public class EnemySM : StateMachine
         target = PlayerManager.instance.player.transform;
         agent = GetComponent<NavMeshAgent>();
         indexPatrol = 0;
-
-        // Declare renderer
-        rend = gameObject.GetComponentsInChildren<Renderer>()[0];
-        rend.enabled = true;
 
         playerInRange = false;
 
