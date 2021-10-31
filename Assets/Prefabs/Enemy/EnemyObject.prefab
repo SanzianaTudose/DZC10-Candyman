@@ -57,7 +57,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -153,7 +152,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -310,8 +308,8 @@ MonoBehaviour:
   indexPatrol: 0
   lookRadius: 5
   lockInRange:
-  - 1
-  - 2
+  - 10
+  - 20
   rigidBody: {fileID: 8351793509917127506}
   materials:
   - {fileID: 2100000, guid: 6b714a95dfb3ea249bc5a440b9bb9d85, type: 2}
