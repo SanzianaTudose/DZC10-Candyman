@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerInteraction : MonoBehaviour
 {
     [SerializeField] private GameObject interactText;
+    [SerializeField] private SceneChanger sceneChanger;
     private GeneralQuest quest;
     private bool playerInRange = false;
     private bool questAlreadyTaken = false;
@@ -73,6 +74,6 @@ public class PlayerInteraction : MonoBehaviour
     }
 
     public void OnFinalDialogueEnd() {
-        SceneManager.LoadScene("EndScene", LoadSceneMode.Single);
+        StartCoroutine(sceneChanger.StartShakeTransition("EndScene"));
     }
 }
