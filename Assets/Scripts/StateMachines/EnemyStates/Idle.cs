@@ -8,7 +8,6 @@ public class Idle : Grounded
     public override void Enter()
     {
         base.Enter();
-		sm.rend.sharedMaterial = sm.materials[0]; // green material
     }
 
     public override void UpdateLogic()

@@ -17,7 +17,6 @@ public class Attack : Grounded
     public override void Enter()
     {
         base.Enter();
-        sm.rend.sharedMaterial = sm.materials[3]; // red material
         pMeter = GameObject.FindGameObjectWithTag("Meter").GetComponent<PanicMeterController>();
         sPrompt = GameObject.FindGameObjectWithTag("Spam").GetComponent<SpamController>();
         player = sm.target.gameObject.GetComponent<PlayerController>();
