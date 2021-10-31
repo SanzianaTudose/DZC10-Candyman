@@ -10,6 +10,7 @@ TagManager:
   - Candy2
   - Candy3
   - Candy1
+  - Spam
   layers:
   - Default
   - TransparentFX
