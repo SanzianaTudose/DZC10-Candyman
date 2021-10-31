@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using TMPro;
 
 
 public class Attack : Grounded
 {
     private PlayerController player;
     public PanicMeterController pMeter;
-    private EnemyAnimatorController enemyAnimator;
+    private SpamController sPrompt;
     private float addPanic = 0.0006f;
     private int eCount = 0;
     public Attack(EnemySM stateMachine) : base("Attack", stateMachine) { }
@@ -18,8 +19,9 @@ public class Attack : Grounded
         base.Enter();
         sm.rend.sharedMaterial = sm.materials[3]; // red material
         pMeter = GameObject.FindGameObjectWithTag("Meter").GetComponent<PanicMeterController>();
+        sPrompt = GameObject.FindGameObjectWithTag("Spam").GetComponent<SpamController>();
         player = sm.target.gameObject.GetComponent<PlayerController>();
-        enemyAnimator = GameObject.Find("SKELETON").GetComponent<EnemyAnimatorController>();
+
     }
 
     public override void UpdateLogic()
@@ -34,16 +36,16 @@ public class Attack : Grounded
 
     private void MiniGame()
     {
+        sPrompt.appear = true;
         player.speed = 0;
-        enemyAnimator.SetAttack();
         if (Input.GetKeyDown(KeyCode.E))
         {
             eCount += 1;
             if(eCount > 20)
             {
+                sPrompt.appear = false;
                 stateMachine.ChangeState(sm.idleState);
                 player.speed = player.defaultSpeed;
-                enemyAnimator.SetAttackFalse();
                 eCount = 0;
             }
             
