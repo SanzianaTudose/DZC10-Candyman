@@ -2027,6 +2027,7 @@ GameObject:
   - component: {fileID: 661288045}
   - component: {fileID: 163465597}
   - component: {fileID: 163465590}
+  - component: {fileID: 1515917766}
   m_Layer: 0
   m_Name: NewPlayer
   m_TagString: Player
@@ -2165,7 +2166,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.333
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2272,6 +2273,14 @@ MonoBehaviour:
   - {fileID: 8300000, guid: ddbd92c3f2a85fd4cbcfd069184e93fe, type: 3}
   - {fileID: 8300000, guid: 1252ced8644f34c4da44fde623ccaee5, type: 3}
   - {fileID: 8300000, guid: 69904bbf26958bd449f8c619b8e6a00b, type: 3}
+--- !u!81 &1515917766
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5060549315722304169}
+  m_Enabled: 1
 --- !u!1 &5078947911420790413
 GameObject:
   m_ObjectHideFlags: 0
