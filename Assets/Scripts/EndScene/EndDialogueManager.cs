@@ -8,6 +8,7 @@ public class EndDialogueManager : MonoBehaviour
 {
     int dialogueCount = 0;
     public Dialogue[] dialogue;
+    [SerializeField] private SceneChanger sceneChanger;
     [SerializeField] private TMP_Text nameText;
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField] private GameObject dialogueBox;
@@ -36,6 +37,6 @@ public class EndDialogueManager : MonoBehaviour
     }
 
     private void OnEndGame() {
-        SceneManager.LoadScene("EndMenu");
+        sceneChanger.FadeToScene("EndMenu");
     }
 }
