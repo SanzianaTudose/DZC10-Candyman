@@ -145,6 +145,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolSound: {fileID: 8300000, guid: 01e9ee4e7c411be4dafaa4b1d7cffdfd, type: 3}
+  lockInSound: {fileID: 8300000, guid: 9a658b2eaa9848645ac73501ff3e761f, type: 3}
+  chaseSound: {fileID: 8300000, guid: 5187d93b97fcbfc419c6af3ff91bb65e, type: 3}
+  attackSound: {fileID: 8300000, guid: 12442fa46f864524ea4622f4d5878524, type: 3}
 --- !u!1 &1309988761864684912
 GameObject:
   m_ObjectHideFlags: 0
