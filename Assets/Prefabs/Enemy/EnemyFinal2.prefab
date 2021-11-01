@@ -116,7 +116,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3497384790209252256}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.68, y: 0.3862955, z: 1.8408272}
+  m_LocalPosition: {x: -2.81, y: 0.3862955, z: -6.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1101025512883143353}
@@ -295,6 +295,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3667418004917088030, guid: 5b7707b92241f7c4cab19a1385fc9c69, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4484771425736383854, guid: 5b7707b92241f7c4cab19a1385fc9c69, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1203a93a2a43aa548a19014030344ca3, type: 2}
+    - target: {fileID: 4484771425736383854, guid: 5b7707b92241f7c4cab19a1385fc9c69, type: 3}
+      propertyPath: m_CullingMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506399735605824592, guid: 5b7707b92241f7c4cab19a1385fc9c69, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: a58154c350c4ccf47a6cdad03a8dca1a, type: 3}
+    - target: {fileID: 4506399735605824592, guid: 5b7707b92241f7c4cab19a1385fc9c69, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506399735605824592, guid: 5b7707b92241f7c4cab19a1385fc9c69, type: 3}
+      propertyPath: m_UpdateWhenOffscreen
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7249662694011950790, guid: 5b7707b92241f7c4cab19a1385fc9c69, type: 3}
