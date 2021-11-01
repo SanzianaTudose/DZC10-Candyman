@@ -11,6 +11,9 @@ public class StartMenu : MonoBehaviour
     [SerializeField] private GameObject sceneChangerObject;
     private VideoPlayer videoPlayer;
     private SceneChanger sceneChanger;
+    private AudioSource[] allAudioSources;
+    [SerializeField] private AudioClip starWars;
+
 
 
     private void Start() {
@@ -23,6 +26,13 @@ public class StartMenu : MonoBehaviour
     }
 
     public void OnClickPlay() {
+        allAudioSources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
+        foreach (AudioSource audioS in allAudioSources)
+        {
+            audioS.Stop();
+        }
+        GetComponent<AudioSource>().PlayOneShot(starWars);
+
         imageObject.SetActive(true);
         videoPlayer.Play();
 
