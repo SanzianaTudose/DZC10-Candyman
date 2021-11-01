@@ -10,6 +10,9 @@ public class CandymanController : MonoBehaviour
     [SerializeField] private SceneChanger sceneChanger;
     [SerializeField] private float newSpeedRatio;
     [SerializeField] private float[] newLockInOfEnemies;
+    [SerializeField] private AudioClip gibberishNPC;
+    [SerializeField] private AudioClip gibberishNPC2;
+
     private DialogueTrigger dialogueTrigger;
 
     private bool playerInRange = false; // Don't display dialogue box when Player is not in range
@@ -26,6 +29,7 @@ public class CandymanController : MonoBehaviour
         if (!playerChoseCandy && playerInRange && Input.GetKeyDown(KeyCode.E)) {
             dialogueTrigger.TriggerDialogue(0);
             interactText.gameObject.SetActive(false);
+            GetComponent<AudioSource>().PlayOneShot(gibberishNPC);
         }
     }
 
@@ -41,12 +45,16 @@ public class CandymanController : MonoBehaviour
         if (other.gameObject.CompareTag("Player")) {
             interactText.gameObject.SetActive(false);
 
+            GetComponent<AudioSource>().Stop();
             dialogueTrigger.EndDialogue();
             playerInRange = false;
         }
     }
 
     public void OnCandyChosen(Button button) {
+        GetComponent<AudioSource>().Stop();
+        GetComponent<AudioSource>().PlayOneShot(gibberishNPC2);
+
         dialogueTrigger.EndDialogue();
         playerChoseCandy = true;
         PlayerController player = PlayerManager.instance.player.GetComponent<PlayerController>();
