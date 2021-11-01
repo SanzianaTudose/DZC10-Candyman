@@ -13,12 +13,11 @@ public class EnemySM : StateMachine
 
     [Header("Values")]
     public float lookRadius = 5f;  // Detection range for player
-    public float[] lockInRange = new float[] {1f,3.5f};
+    public float[] lockInRange;
     public Rigidbody rigidBody;
     public Material[] materials;
 
     [HideInInspector] public Transform target = null;   // Reference to the player
-    [HideInInspector] public Renderer rend = null;
     [HideInInspector] public NavMeshAgent agent = null;
 
     [HideInInspector] public Idle idleState;
@@ -35,13 +34,15 @@ public class EnemySM : StateMachine
         agent = GetComponent<NavMeshAgent>();
         indexPatrol = 0;
 
-        // Declare renderer
-        rend = gameObject.GetComponentsInChildren<Renderer>()[0];
-        rend.enabled = true;
-
         playerInRange = false;
 
         base.Start();
+
+        if (SetPlayerAttributes.LockInMax != float.NaN && SetPlayerAttributes.LockInMax != 0 && SetPlayerAttributes.LockInMin != float.NaN && SetPlayerAttributes.LockInMin != 0)
+        {
+            lockInRange[0] = SetPlayerAttributes.LockInMin;
+            lockInRange[1] = SetPlayerAttributes.LockInMax;
+        }
     }
 
     private void Awake()

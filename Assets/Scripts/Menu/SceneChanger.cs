@@ -7,7 +7,14 @@ public class SceneChanger : MonoBehaviour
 {
     private Animator animator;
     private string sceneToLoad;
-    // Start is called before the first frame update
+
+    [Header("Shake Transition Variables")]
+    [SerializeField] private float duration = 3f;
+    [SerializeField] private float startMagnitude = 0.4f;
+    [SerializeField] private float stepMagnitude = 0.1f;
+
+    [SerializeField] CameraShake cameraShake;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -15,10 +22,15 @@ public class SceneChanger : MonoBehaviour
             Debug.LogError("SceneChanger: Animator component not found.");
     }
 
+    public IEnumerator StartShakeTransition(string sceneName) {
+        StartCoroutine(cameraShake.Shake(duration, startMagnitude, stepMagnitude));
+        yield return new WaitForSeconds(duration - 3f);
+        FadeToScene(sceneName);
+    }
+
     public void FadeToScene(string sceneName) {
         sceneToLoad = sceneName;
         animator.SetTrigger("FadeOut");
-        
     } 
 
     private void OnFadeComplete() {

@@ -7,6 +7,9 @@ using UnityEngine.SceneManagement;
 public class CandymanController : MonoBehaviour
 {
     [SerializeField] private GameObject interactText;
+    [SerializeField] private SceneChanger sceneChanger;
+    [SerializeField] private float newSpeedRatio;
+    [SerializeField] private float[] newLockInOfEnemies;
     private DialogueTrigger dialogueTrigger;
 
     private bool playerInRange = false; // Don't display dialogue box when Player is not in range
@@ -46,19 +49,22 @@ public class CandymanController : MonoBehaviour
     public void OnCandyChosen(Button button) {
         dialogueTrigger.EndDialogue();
         playerChoseCandy = true;
+        PlayerController player = PlayerManager.instance.player.GetComponent<PlayerController>();
 
         if (button.gameObject.tag == "Candy1")
         {
-            Debug.Log("Speeed");
+            SetPlayerAttributes.Speed = newSpeedRatio * player.speed;
         }
         else if (button.gameObject.tag == "Candy2")
         {
-            Debug.Log("More Vision");
+            SetPlayerAttributes.LockInMin = newLockInOfEnemies[0];
+            SetPlayerAttributes.LockInMax = newLockInOfEnemies[1];
         }
         else if (button.gameObject.tag == "Candy3") 
         { 
-            Debug.Log("No power-up"); 
+            Debug.Log("No power-up");
         }
-            //SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
+
+        StartCoroutine(sceneChanger.StartShakeTransition("MainScene"));
     }
 }
