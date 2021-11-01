@@ -32,6 +32,7 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue() {
         dialogueBox.SetActive(false);
         compass.SetActive(true);
+        finalChoices.SetActive(false);
         candyChoices.SetActive(false);
         questChoices.SetActive(false);
     }

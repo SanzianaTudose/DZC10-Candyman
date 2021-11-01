@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class CandymanController : MonoBehaviour
 {
     [SerializeField] private GameObject interactText;
+    [SerializeField] private SceneChanger sceneChanger;
     [SerializeField] private float newSpeedRatio;
     [SerializeField] private float[] newLockInOfEnemies;
     private DialogueTrigger dialogueTrigger;
@@ -64,6 +65,6 @@ public class CandymanController : MonoBehaviour
             Debug.Log("No power-up");
         }
 
-        SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
+        StartCoroutine(sceneChanger.StartShakeTransition("MainScene"));
     }
 }
