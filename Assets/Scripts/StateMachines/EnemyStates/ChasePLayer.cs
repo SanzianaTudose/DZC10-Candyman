@@ -13,7 +13,6 @@ public class ChasePlayer : Grounded
 
     public override void Enter() {
         base.Enter();
-        sm.rend.sharedMaterial = sm.materials[2]; // orange material
         pMeter = GameObject.FindGameObjectWithTag("Meter").GetComponent<PanicMeterController>();
     }
 

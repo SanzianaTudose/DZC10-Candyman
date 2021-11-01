@@ -13,7 +13,6 @@ public class LockIn : Grounded
     public override void Enter()
     {
         base.Enter();
-        sm.rend.sharedMaterial = sm.materials[1]; // blue material
     }
 
     public override void UpdateLogic()
