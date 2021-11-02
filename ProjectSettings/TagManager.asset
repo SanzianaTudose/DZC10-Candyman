@@ -11,6 +11,7 @@ TagManager:
   - Candy3
   - Candy1
   - Spam
+  - Enemy
   layers:
   - Default
   - TransparentFX

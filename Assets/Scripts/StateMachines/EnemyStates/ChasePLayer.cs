@@ -8,16 +8,20 @@ public class ChasePlayer : Grounded
 {
     public PanicMeterController pMeter;
     private float addPanic = 0.0002f;
+    private EnemyAnimatorController enemyAnimator;
 
     public ChasePlayer(EnemySM stateMachine) : base("ChasePlayer", stateMachine) { }
 
     public override void Enter() {
         base.Enter();
         pMeter = GameObject.FindGameObjectWithTag("Meter").GetComponent<PanicMeterController>();
+        enemyAnimator = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemyAnimatorController>();
     }
 
     public override void UpdateLogic() {
         base.UpdateLogic();
+        enemyAnimator.SetLockFalse();
+        enemyAnimator.SetChase();
 
         // If the player is in range of the enemy vision move towards target
         if (sm.playerIsInRange())
