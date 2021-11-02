@@ -51,7 +51,7 @@ public class PanicMeterController : MonoBehaviour
     {
         if (panicMeter.value == 1)
         {
-            SceneManager.LoadScene("SchoolScene");
+            SceneManager.LoadScene("SchoolScene2");
             
         }
     }
