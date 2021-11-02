@@ -194,6 +194,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 1309988761864684915}
     m_Modifications:
     - target: {fileID: 1860836144913314628, guid: 5b7707b92241f7c4cab19a1385fc9c69, type: 3}
+      propertyPath: lockInRange.Array.data[0]
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1860836144913314628, guid: 5b7707b92241f7c4cab19a1385fc9c69, type: 3}
+      propertyPath: lockInRange.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1860836144913314628, guid: 5b7707b92241f7c4cab19a1385fc9c69, type: 3}
       propertyPath: patrolPoints.Array.data[0]
       value: 
       objectReference: {fileID: 1101025512883143353}

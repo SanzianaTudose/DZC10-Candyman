@@ -1089,6 +1089,10 @@ PrefabInstance:
       propertyPath: playerFollowCam
       value: 
       objectReference: {fileID: 994590166}
+    - target: {fileID: 6884341968402067653, guid: a4d354c45b021184b885735490a9eb35, type: 3}
+      propertyPath: durationBegCutScene
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4d354c45b021184b885735490a9eb35, type: 3}
 --- !u!1001 &9008737867321427753

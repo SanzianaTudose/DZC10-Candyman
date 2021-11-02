@@ -62,15 +62,21 @@ public class CandymanController : MonoBehaviour
         if (button.gameObject.tag == "Candy1")
         {
             SetPlayerAttributes.Speed = newSpeedRatio * player.speed;
+            SetPlayerAttributes.LockInMin = 0;
+            SetPlayerAttributes.LockInMax = 0;
         }
         else if (button.gameObject.tag == "Candy2")
         {
+            SetPlayerAttributes.Speed = 0;
             SetPlayerAttributes.LockInMin = newLockInOfEnemies[0];
             SetPlayerAttributes.LockInMax = newLockInOfEnemies[1];
         }
         else if (button.gameObject.tag == "Candy3") 
         { 
             Debug.Log("No power-up");
+            SetPlayerAttributes.Speed = 0;
+            SetPlayerAttributes.LockInMin = 0;
+            SetPlayerAttributes.LockInMax = 0;
         }
 
         StartCoroutine(sceneChanger.StartShakeTransition("MainScene"));
