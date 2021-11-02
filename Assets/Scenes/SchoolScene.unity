@@ -130,6 +130,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3137642297956789384, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137642297956789384, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137642297956789384, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.004
+      objectReference: {fileID: 0}
+    - target: {fileID: 6048836074722785120, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7445737550580478202, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -186,7 +202,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candyman
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6048836074722785120, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
+    - {fileID: 6048836074722785121, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
 --- !u!1001 &69602491
 PrefabInstance:
