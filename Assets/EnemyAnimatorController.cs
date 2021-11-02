@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyAnimatorController : MonoBehaviour
 {
-    private Animator anim;
+    public Animator anim;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,5 +26,44 @@ public class EnemyAnimatorController : MonoBehaviour
     public void SetAttackFalse()
     {
         anim.SetBool("Attack", false);
+    }
+
+    public void SetHit()
+    {
+        anim.SetBool("hit", true);
+    }
+
+    public void SetHitFalse()
+    {
+        anim.SetBool("hit", false);
+    }
+
+    public void SetLock()
+    {
+        anim.SetBool("lock", true);
+    }
+
+    public void SetLockFalse()
+    {
+        anim.SetBool("lock", false);
+    }
+
+    public void SetChase()
+    {
+        anim.SetBool("chase", true);
+    }
+
+    public void SetChaseFalse()
+    {
+        anim.SetBool("chase", false);
+    }
+    public void SetPatrol()
+    {
+        anim.SetBool("patrol", true);
+    }
+
+    public void SetPatrolFalse()
+    {
+        anim.SetBool("patrol", false);
     }
 }

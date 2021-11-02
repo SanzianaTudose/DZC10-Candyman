@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class LockIn : Grounded
 {
     public float hasBeenWaitingFor = 0;
+    private EnemyAnimatorController enemyAnimator;
     // currently the waiting time gets lower each time you enter reenter the enemy "LockIn" state
     // if we wanted to reset it you would do it in this enter state and make it equal to 0
     public LockIn(EnemySM stateMachine) : base("LockIn", stateMachine) { }
@@ -13,12 +14,14 @@ public class LockIn : Grounded
     public override void Enter()
     {
         base.Enter();
+        enemyAnimator = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemyAnimatorController>();
     }
 
     public override void UpdateLogic()
     {
         base.UpdateLogic();
-
+        enemyAnimator.SetLock();
+        enemyAnimator.SetPatrolFalse();
         sm.agent.GetComponentInParent<EnemySounds>().LockIn();
 
         waitToLockIn();

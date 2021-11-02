@@ -3,16 +3,19 @@ using UnityEngine.AI;
 
 public class Patrol : Grounded
 {
+    private EnemyAnimatorController enemyAnimator;
     public Patrol(EnemySM stateMachine) : base("Patrol", stateMachine) { }
 
     public override void Enter()
     {
         base.Enter();
+        enemyAnimator = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemyAnimatorController>();
     }
 
     public override void UpdateLogic()
     {
         base.UpdateLogic();
+        enemyAnimator.SetPatrol();
 
         // If the player is in range of the enemy vision move towards target
         if (sm.playerIsInRange())

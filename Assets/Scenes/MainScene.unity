@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 489ac3f04341960499e21cd63ef8976a, type: 2}
+--- !u!95 &64075810 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5889287042391830037, guid: 0363fa7c9e6a7b0419c5e81c52a6b7fc, type: 3}
+  m_PrefabInstance: {fileID: 1752046617}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &166044731 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6198960940787514357, guid: 063d51fbcc0e85743bc55d9f14b03cb7, type: 3}
@@ -1424,6 +1429,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1309988761864684915, guid: 0363fa7c9e6a7b0419c5e81c52a6b7fc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830196885325311781, guid: 0363fa7c9e6a7b0419c5e81c52a6b7fc, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 64075810}
+    - target: {fileID: 5831543757406946765, guid: 0363fa7c9e6a7b0419c5e81c52a6b7fc, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8036647718091559683, guid: 0363fa7c9e6a7b0419c5e81c52a6b7fc, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
