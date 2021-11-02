@@ -190,6 +190,10 @@ PrefabInstance:
       propertyPath: smoothSpeed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 7284961613846699603, guid: e807a5c7991090d468a4f0536046c53d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2236884908315544669, guid: e807a5c7991090d468a4f0536046c53d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e807a5c7991090d468a4f0536046c53d, type: 3}

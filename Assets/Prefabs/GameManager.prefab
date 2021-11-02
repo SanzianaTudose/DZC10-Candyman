@@ -79,6 +79,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   castleDoor: {fileID: 0}
+  doorSound: {fileID: 8300000, guid: bfc602dbd5d5aa74ea5b2c5ddf09882d, type: 3}
 --- !u!114 &1131288343
 MonoBehaviour:
   m_ObjectHideFlags: 0
