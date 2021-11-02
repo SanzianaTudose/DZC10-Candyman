@@ -150,22 +150,6 @@ MonoBehaviour:
   spamPrompt: {fileID: 1556765892}
   prompt: {fileID: 1556765890}
   appear: 0
---- !u!114 &6591286683057515020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1364767524929250338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03e60b175c311e447951b5008294966e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panicMeter: {fileID: 1364767524929250332}
-  mainCamera: {fileID: 0}
-  lowFov: 7
-  defaultFov: 10
 --- !u!1 &6591286682174834344
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,6 +856,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5298577895554493301, guid: 0ad8287f266b42d45b66410e96da65f3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.14841843
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ad8287f266b42d45b66410e96da65f3, type: 3}
 --- !u!1 &1364767524929250338 stripped
@@ -895,6 +883,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6591286683057515020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364767524929250338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03e60b175c311e447951b5008294966e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panicMeter: {fileID: 1364767524929250332}
+  mainCamera: {fileID: 0}
+  lowFov: 7
+  defaultFov: 10
 --- !u!1001 &7716479771707187324
 PrefabInstance:
   m_ObjectHideFlags: 0
