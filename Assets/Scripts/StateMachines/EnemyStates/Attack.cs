@@ -46,7 +46,7 @@ public class Attack : Grounded
         if (Input.GetKeyDown(KeyCode.E))
         {
             eCount += 1;
-            if(eCount > 20)
+            if(eCount > 10)
             {
                 sPrompt.appear = false;
                 enemyAnimator.SetAttackFalse();

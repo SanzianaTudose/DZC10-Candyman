@@ -190,6 +190,10 @@ PrefabInstance:
       propertyPath: smoothSpeed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 7284961613846699603, guid: e807a5c7991090d468a4f0536046c53d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2236884908315544669, guid: e807a5c7991090d468a4f0536046c53d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e807a5c7991090d468a4f0536046c53d, type: 3}
@@ -849,6 +853,18 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1967106371093387325, guid: 51fc32a0a3328a549b5c5304e2e9792e, type: 3}
+      propertyPath: dialogue.Array.data[0].npcName
+      value: Belgian Hall Monitor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1967106371093387325, guid: 51fc32a0a3328a549b5c5304e2e9792e, type: 3}
+      propertyPath: dialogue.Array.data[1].npcName
+      value: Belgian Hall Monitor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1967106371093387325, guid: 51fc32a0a3328a549b5c5304e2e9792e, type: 3}
+      propertyPath: dialogue.Array.data[2].npcName
+      value: Belgian Hall Monitor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1967106371093387325, guid: 51fc32a0a3328a549b5c5304e2e9792e, type: 3}
       propertyPath: dialogue.Array.data[0].sentence
       value: 'Sugar?! '
       objectReference: {fileID: 0}
@@ -859,7 +875,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1967106371093387325, guid: 51fc32a0a3328a549b5c5304e2e9792e, type: 3}
       propertyPath: dialogue.Array.data[2].sentence
-      value: Now where did you put the key?
+      value: Now where did you put the key to the food pantry?
       objectReference: {fileID: 0}
     - target: {fileID: 5503524516830150854, guid: 51fc32a0a3328a549b5c5304e2e9792e, type: 3}
       propertyPath: m_Enabled
@@ -976,6 +992,22 @@ PrefabInstance:
     - target: {fileID: 8566221747074216640, guid: 51fc32a0a3328a549b5c5304e2e9792e, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8566221748685228698, guid: 51fc32a0a3328a549b5c5304e2e9792e, type: 3}
+      propertyPath: m_text
+      value: Belgian Hall Monitor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8566221748685228698, guid: 51fc32a0a3328a549b5c5304e2e9792e, type: 3}
+      propertyPath: m_margin.z
+      value: 0.7763214
+      objectReference: {fileID: 0}
+    - target: {fileID: 8566221748685228699, guid: 51fc32a0a3328a549b5c5304e2e9792e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 378.2166
+      objectReference: {fileID: 0}
+    - target: {fileID: 8566221748685228699, guid: 51fc32a0a3328a549b5c5304e2e9792e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -123.75828
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51fc32a0a3328a549b5c5304e2e9792e, type: 3}
