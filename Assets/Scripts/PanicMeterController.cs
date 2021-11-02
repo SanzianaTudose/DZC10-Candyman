@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class PanicMeterController : MonoBehaviour
 {
+    [SerializeField] private GameObject healthLowImage;
+    [SerializeField] private AudioClip hurtAudio;
     public Slider panicMeter;
     private float startValue = 0.0f;
     public Camera mainCamera;
@@ -31,9 +33,15 @@ public class PanicMeterController : MonoBehaviour
     {
         if(panicMeter.value > 0.8f)
         {
-            mainCamera.fieldOfView = lowFov /1.75f;
+            healthLowImage.SetActive(true);
+            //mainCamera.fieldOfView = lowFov /1.75f;
+            mainCamera.fieldOfView = defaultFov / 1.75f;
+            GetComponent<AudioSource>().PlayOneShot(hurtAudio);
+
         } else
         {
+            GetComponent<AudioSource>().Stop();
+            healthLowImage.SetActive(false);
             mainCamera.fieldOfView = defaultFov /1.75f;
         }
     }
