@@ -198,6 +198,14 @@ PrefabInstance:
       propertyPath: sceneChanger
       value: 
       objectReference: {fileID: 1225634007}
+    - target: {fileID: 7445737550580663520, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
+      propertyPath: newLockInOfEnemies.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7445737550580663520, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
+      propertyPath: newLockInOfEnemies.Array.data[1]
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7445737550580730056, guid: 3d47ae5cdd69420449490f1a1fd0c2ac, type: 3}
       propertyPath: m_Name
       value: Candyman
@@ -1098,10 +1106,20 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1732198762}
+    - target: {fileID: 4617355144768868510, guid: 71cf8897c8a69b844ac8bdac6d63c589, type: 3}
+      propertyPath: m_text
+      value: 'Friendly candy
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 4617355144862093460, guid: 71cf8897c8a69b844ac8bdac6d63c589, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1732198762}
+    - target: {fileID: 4617355145352066986, guid: 71cf8897c8a69b844ac8bdac6d63c589, type: 3}
+      propertyPath: m_text
+      value: '"No effect" candy'
+      objectReference: {fileID: 0}
     - target: {fileID: 9008737866781299110, guid: 71cf8897c8a69b844ac8bdac6d63c589, type: 3}
       propertyPath: m_Name
       value: GlobalCanvas
