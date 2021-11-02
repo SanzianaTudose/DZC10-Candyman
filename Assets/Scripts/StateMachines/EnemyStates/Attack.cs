@@ -27,6 +27,8 @@ public class Attack : Grounded
     {
         base.UpdateLogic();
 
+        sm.agent.GetComponentInParent<EnemySounds>().Attack();
+
         sm.FaceTarget(sm.target);   // Make sure to face towards the target
         IncreasePanic();
         MiniGame();

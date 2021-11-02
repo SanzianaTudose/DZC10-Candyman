@@ -5,6 +5,7 @@ using UnityEngine;
 public class QuestItem : MonoBehaviour
 {
     private GeneralQuest parentQuest;
+    [SerializeField] private AudioClip collectItemSound;
 
     private void Start() {
         parentQuest = transform.parent.transform.parent.GetComponent<GeneralQuest>();
@@ -16,8 +17,9 @@ public class QuestItem : MonoBehaviour
     private void OnTriggerEnter(Collider collider)
     {
         // when items gets collected
-        if (collider.gameObject.tag == "Player")
+        if (collider.gameObject.tag == "Player")    
         {
+            GetComponentInParent<AudioSource>().PlayOneShot(collectItemSound);
             // add to counter of collected items and disable item
             transform.gameObject.SetActive(false);
             

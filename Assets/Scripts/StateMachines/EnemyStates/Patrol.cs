@@ -20,10 +20,9 @@ public class Patrol : Grounded
             sm.agent.isStopped = true;
             stateMachine.ChangeState(sm.lockInState);
         }
-
+        sm.agent.GetComponentInParent<EnemySounds>().Patrol();
         startPatroling();
     }
-
     void startPatroling()
     {
         // If we are at the destination go to next point

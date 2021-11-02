@@ -22,6 +22,8 @@ public class ChasePlayer : Grounded
         // If the player is in range of the enemy vision move towards target
         if (sm.playerIsInRange())
         {
+            sm.agent.GetComponentInParent<EnemySounds>().Chase();
+
             MoveTowardsTarget();
             IncreasePanic();
         }

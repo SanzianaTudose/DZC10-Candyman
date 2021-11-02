@@ -19,6 +19,8 @@ public class LockIn : Grounded
     {
         base.UpdateLogic();
 
+        sm.agent.GetComponentInParent<EnemySounds>().LockIn();
+
         waitToLockIn();
 
         if(!sm.playerIsInRange())

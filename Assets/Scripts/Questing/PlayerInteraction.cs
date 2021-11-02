@@ -10,6 +10,8 @@ public class PlayerInteraction : MonoBehaviour
     private GeneralQuest quest;
     private bool playerInRange = false;
     private bool questAlreadyTaken = false;
+    [SerializeField] private AudioClip gibberishQuestNPC;
+
 
     private DialogueTrigger dialogueTrigger;
     [SerializeField] private GameObject gameManager;
@@ -28,6 +30,8 @@ public class PlayerInteraction : MonoBehaviour
     {
         if(playerInRange && Input.GetKeyDown(KeyCode.E))
         {
+            GetComponent<AudioSource>().PlayOneShot(gibberishQuestNPC);
+
             if (!questAlreadyTaken) {
                 interactText.gameObject.SetActive(false);
                 dialogueTrigger.TriggerDialogue(0);
@@ -52,6 +56,8 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            GetComponent<AudioSource>().Stop();
+
             interactText.gameObject.SetActive(false);
             playerInRange = false;
 
@@ -60,6 +66,8 @@ public class PlayerInteraction : MonoBehaviour
     }
 
     public void OnQuestAccept() {
+        GetComponent<AudioSource>().Stop();
+
         questAlreadyTaken = true;
         quest.ActivateQuest();
         dialogueTrigger.EndDialogue();
@@ -70,10 +78,14 @@ public class PlayerInteraction : MonoBehaviour
     }
 
     public void OnQuestReject() {
+        GetComponent<AudioSource>().Stop();
+
         dialogueTrigger.EndDialogue();
     }
 
     public void OnFinalDialogueEnd() {
+        GetComponent<AudioSource>().Stop();
+
         StartCoroutine(sceneChanger.StartShakeTransition("EndScene"));
     }
 }
