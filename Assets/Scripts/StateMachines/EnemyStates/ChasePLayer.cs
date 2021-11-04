@@ -20,7 +20,6 @@ public class ChasePlayer : Grounded
 
     public override void UpdateLogic() {
         base.UpdateLogic();
-        enemyAnimator.SetLockFalse();
         enemyAnimator.SetChase();
 
         // If the player is in range of the enemy vision move towards target

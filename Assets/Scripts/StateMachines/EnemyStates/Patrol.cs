@@ -15,19 +15,21 @@ public class Patrol : Grounded
     public override void UpdateLogic()
     {
         base.UpdateLogic();
-        enemyAnimator.SetPatrol();
+        
 
         // If the player is in range of the enemy vision move towards target
         if (sm.playerIsInRange())
         {
             sm.agent.isStopped = true;
+            enemyAnimator.SetPatrolFalse();
             stateMachine.ChangeState(sm.lockInState);
         }
         sm.agent.GetComponentInParent<EnemySounds>().Patrol();
-        startPatroling();
+        StartPatroling();
     }
-    void startPatroling()
+    void StartPatroling()
     {
+        enemyAnimator.SetPatrol();
         // If we are at the destination go to next point
         if (sm.agentHasReachedDestination())
         {

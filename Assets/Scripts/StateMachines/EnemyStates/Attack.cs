@@ -49,8 +49,8 @@ public class Attack : Grounded
             if(eCount > 10)
             {
                 sPrompt.appear = false;
-                enemyAnimator.SetAttackFalse();
                 enemyAnimator.SetHit();
+                enemyAnimator.AttackTriggerF();
                 stateMachine.ChangeState(sm.idleState);
                 player.speed = player.defaultSpeed;
                 eCount = 0;

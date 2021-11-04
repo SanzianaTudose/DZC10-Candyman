@@ -8,7 +8,7 @@ public class EnemyAnimatorController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();
+        
     }
 
     // Update is called once per frame
@@ -20,13 +20,14 @@ public class EnemyAnimatorController : MonoBehaviour
 
     public void SetAttack()
     {
-        anim.SetBool("Attack", true);
+        anim.SetTrigger("attack");
     }
 
-    public void SetAttackFalse()
+    public void AttackTriggerF()
     {
-        anim.SetBool("Attack", false);
+        anim.ResetTrigger("attack");
     }
+
 
     public void SetHit()
     {
@@ -40,12 +41,12 @@ public class EnemyAnimatorController : MonoBehaviour
 
     public void SetLock()
     {
-        anim.SetBool("lock", true);
+        anim.SetBool("lockin", true);
     }
 
-    public void SetLockFalse()
+    public void SetLockTrigger()
     {
-        anim.SetBool("lock", false);
+        anim.SetBool("lockin", false);
     }
 
     public void SetChase()

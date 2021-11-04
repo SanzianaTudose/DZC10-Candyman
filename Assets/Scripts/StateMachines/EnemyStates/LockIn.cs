@@ -21,7 +21,8 @@ public class LockIn : Grounded
     {
         base.UpdateLogic();
         enemyAnimator.SetLock();
-        enemyAnimator.SetPatrolFalse();
+
+
         sm.agent.GetComponentInParent<EnemySounds>().LockIn();
 
         waitToLockIn();
@@ -34,12 +35,14 @@ public class LockIn : Grounded
     void waitToLockIn()
     {
         hasBeenWaitingFor += Time.deltaTime;
-
         float waitTime = Random.Range(sm.lockInRange[0], sm.lockInRange[1]);
         if (hasBeenWaitingFor > waitTime)
         {
             hasBeenWaitingFor = 0;
+            enemyAnimator.SetLockTrigger();
             stateMachine.ChangeState(sm.chasePlayerState);
         }
+
+       
     }
 }
